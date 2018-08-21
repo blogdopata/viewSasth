@@ -1,0 +1,22 @@
+{
+  "name": "viewsasth",
+  "version": "1.0.0",
+  "description": "viewsTime",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blogdopata/viewSasth.git"
+  },
+  "author": "@blogdopata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blogdopata/viewSasth/issues"
+  },
+  "homepage": "https://github.com/blogdopata/viewSasth#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
