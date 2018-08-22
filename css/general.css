@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../webfonts/Roboto-Regular.ttf");
+}
+
 body{
     background: rgba(176,3,43,1);
     background: -moz-linear-gradient(left, rgba(176,3,43,1) 0%, rgba(166,3,41,1) 14%, rgba(146,2,36,1) 44%, rgba(112,0,26,1) 71%, rgba(112,0,26,1) 84%);
@@ -6,14 +11,19 @@ body{
     background: -o-linear-gradient(left, rgba(176,3,43,1) 0%, rgba(166,3,41,1) 14%, rgba(146,2,36,1) 44%, rgba(112,0,26,1) 71%, rgba(112,0,26,1) 84%);
     background: -ms-linear-gradient(left, rgba(176,3,43,1) 0%, rgba(166,3,41,1) 14%, rgba(146,2,36,1) 44%, rgba(112,0,26,1) 71%, rgba(112,0,26,1) 84%);
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
 }
 .header{
-    border: 1px solid #000; 
+   /* border: 1px solid #000; */
 }
 
-
-.menu , .text-intro{
-    background-color:  rgba(0, 0, 0, 0.3)
+#menu , .text-intro{
+   /* background-color:  rgba(0, 0, 0, 0.3)*/
+   /*border: 1px solid #000;*/
 }
 .menu-link{
     color:white;
@@ -24,11 +34,31 @@ body{
 
 .menu-link:hover , a.active  {
     color: orange;
-    text-decoration: underline
+
 }
-
-
 
 .text-intro p{
     color: white;
 }
+
+.fix-img{
+    width: 100%;
+    height: 42vh;
+}
+footer{
+    font-size: 0.8em;
+  
+}
+
+/*  Login  */
+
+.form-fix{
+    background: #fff;
+    padding: 3em 2em;
+    border: 2px solid #000;
+}
+.btn-fix{
+    padding-left:1em;
+    padding-right: 1em;
+}
+/* EndLoging*/
