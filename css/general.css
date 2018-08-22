@@ -1,0 +1,34 @@
+body{
+    background: rgba(176,3,43,1);
+    background: -moz-linear-gradient(left, rgba(176,3,43,1) 0%, rgba(166,3,41,1) 14%, rgba(146,2,36,1) 44%, rgba(112,0,26,1) 71%, rgba(112,0,26,1) 84%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(176,3,43,1)), color-stop(14%, rgba(166,3,41,1)), color-stop(44%, rgba(146,2,36,1)), color-stop(71%, rgba(112,0,26,1)), color-stop(84%, rgba(112,0,26,1)));
+    background: -webkit-linear-gradient(left, rgba(176,3,43,1) 0%, rgba(166,3,41,1) 14%, rgba(146,2,36,1) 44%, rgba(112,0,26,1) 71%, rgba(112,0,26,1) 84%);
+    background: -o-linear-gradient(left, rgba(176,3,43,1) 0%, rgba(166,3,41,1) 14%, rgba(146,2,36,1) 44%, rgba(112,0,26,1) 71%, rgba(112,0,26,1) 84%);
+    background: -ms-linear-gradient(left, rgba(176,3,43,1) 0%, rgba(166,3,41,1) 14%, rgba(146,2,36,1) 44%, rgba(112,0,26,1) 71%, rgba(112,0,26,1) 84%);
+    font-size: 16px;
+}
+.header{
+    border: 1px solid #000; 
+}
+
+
+.menu , .text-intro{
+    background-color:  rgba(0, 0, 0, 0.3)
+}
+.menu-link{
+    color:white;
+    font-size: 1em;
+    font-weight: bold;
+   
+}
+
+.menu-link:hover , a.active  {
+    color: orange;
+    text-decoration: underline
+}
+
+
+
+.text-intro p{
+    color: white;
+}
