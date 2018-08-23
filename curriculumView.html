@@ -30,15 +30,15 @@
             </header>
             <hr>
             <section class="row mt-3 ">
-                <nav class="nav col-md-3 " id="menu ">
-                    <ul class="nav flex-column ">
+                <nav class="nav col-3 " id="menu" >
+                    <ul class="nav flex-column pb-0" >
                         <li class="nav-item ">
-                            <a href="index.html " class="menu-link nav-link ">
+                            <a href="index.html " class="menu-link nav-link active">
                                Datos Personales
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="register.html " class="menu-link nav-link active ">
+                            <a href="register.html " class="menu-link nav-link  ">
                                 Estudios
                             </a>
                         </li>
@@ -77,51 +77,101 @@
                                Información Adicional
                             </a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item nav-last-item" >
                             <a href="# " class="menu-link nav-link ">
                                 Referencias
                             </a>
                         </li>
-                       
-                            
+                        
+                        <li class="nav-item"> 
+                             <a href="" class="menu-link nav-link text-primary">
+                                 Descargar pdf
+                                </a>
+                        </li>
+
                     </ul>
+                  
+                   
                 </nav>
-
+               
           
-                <div class="col-9 col-md-5 form-fix ">
+                <div class="col-9 form-fix ">
                     <form action="/">
-                        <div class="form-group row justify-content-center justify-content-lg-end ">
-
-                            <div class="col-12 mb-3 ">
-                                <label for="mail "> Correo: </label>
-                                <input type="mail " class="form-control " placeholder="Ingrese mail " name="mail " id="mail " required>
+                        <div class="row form-group mt-0 align-items-center justify-content-between" >
+                            <h3 class="col-auto"  >Datos Personales</h3>
+                            <div class="col-auto">
+                                    <input type="file" id="file1" name="image" accept="image/*" capture style="display:none">
+                                    <img src="images/noPic.jpg" id="upfile1" class="input-fix-img" 
+                                    />
+                            </div>
+                        </div>    
+                         
+                        <div class="row form-group">
+                            <div class="col-6 mb-3 ">
+                                <label for="nombre">Nombre(s): </label>
+                                <input type="text " class="form-control " placeholder="Ingrese nombre(s)" name="nombre " id="nombre" required>
                             </div>
 
-                            <div class="col-12 mb-3 ">
-                                <label for="pass ">Ingrese una contraseña:</label>
-                                <input type="password " class="form-control " placeholder="******** " name="pass " id="pass " required>
+                            <div class="col-6 mb-3 ">
+                                <label for="apellido">Apellidos:</label>
+                                <input type="text " class="form-control " placeholder="Ingrese apellidos " name="apellido " id="apellido" required>
                             </div>
 
-                            <div class="col-12 mb-3 ">
-                                    <label for="pass2 ">Repetir contraseña:</label>
-                                    <input type="password " class="form-control " placeholder="******** " name="pass2
-                    " id="pass2 " required>
+                            <div class="col-6 mb-3 ">
+                                <label for="fecha">Fecha de nacimiento:</label>
+                                <input type="date" class="form-control"  name="fecha" id="fecha" required placeholder="dd/mm/año">
                             </div>
+
+                            <div class="col-6 mb-3 ">
+                                <p>Género:</p>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="generoM" name="genero" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="generoM">Masculino</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="generoF" name="genero" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="generoF">Femenino</label>
+                                </div>
+                            </div>
+
+                            <div class="col-6 mb-3 ">
+                                <label for="nacionalidad">Nacionalidad:</label>
+                                <select id="nacionalidad" class="custom-select custom-select-sm">
+                                    <option selected>Seleccione</option>
+                                    <option value="1">Perú</option>
+                                    <option value="2">Brazil</option>
+                                    <option value="3">Rumani</option>
+                                </select>
+                            </div>
+
+                            <div class="col-6 mb-3 ">
+                                <label for="estado">Estado Cívil:</label>
+                                <select id="estado" class="custom-select custom-select-sm">
+                                    <option selected>Seleccione</option>
+                                    <option value="1">Soltero </option>
+                                    <option value="2">Casado</option>
+                                    <option value="3">Divorciado</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3 ">
+                                <label for="direccion">Dirección:</label>
+                                <input type="text " class="form-control " placeholder="Ingrese dirección" name="direccion" id="direccion" required>
+                            </div>
+
+
+
+
+
 
                             <div class="col-12 mt-2 mb-3 d-flex justify-content-center justify-content-lg-end ">
-                                    <button class="btn btn-primary align-self-center " type="submit ">Registrarse</button>
+                                <button class="btn btn-primary align-self-center " type="submit ">Registrarse</button>
     
                             </div>
 
                             <div class="col-12 mb-3 ">
                                 <p class="form-text ">
-                                   
-                                        Al <mark>"Registrarme "</mark>    acepto    <a href="# " class="text-primary ">   terminos y condiciones </a> del sitio
-                                    
+                                        Al <mark>"Registrarme "</mark>    acepto    <a href="# " class="text-primary ">   terminos y condiciones </a> del sitio       
                                 </p>
-                               
-
-
                             </div>
                             
                         </div>
@@ -156,6 +206,7 @@
     <script src="js/bootstrap.js "></script>
 
     <script src="js/myscripts.js "></script>
+
 </body>
 
 </html>
