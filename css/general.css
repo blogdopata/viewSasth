@@ -13,10 +13,21 @@ body{
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
+.main{
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+      
+}
+.main-content{
+    flex: 1;
+}
 .container-fluid{
     padding-left: 0;
     padding-right: 0;
 }
+
 .header{
    /* border: 1px solid #000; */
 }
@@ -45,20 +56,37 @@ body{
     width: 100%;
     height: 42vh;
 }
-footer{
+
+.footer-fix{
     font-size: 0.8em;
-  
+    width: 100%;
+    padding: 10px 0;
+   /* border: 1px solid #000;*/
+    background-color: #fff;
+    margin-top: 4em;
+}
+.footer-fix p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
 }
 
-/*  Login  */
+
 
 .form-fix{
     background: #fff;
     padding: 3em 2em;
     border: 2px solid #000;
 }
-.btn-fix{
-    padding-left:1em;
-    padding-right: 1em;
+
+.img-fix{
+    border: 2px solid #000;
 }
-/* EndLoging*/
+.link-color-fix{
+   color:  #4388CC;
+   font-size: 1.2em;
+}
+.link-color-fix:hover{
+    color: #fff;
+}
