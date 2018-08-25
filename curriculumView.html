@@ -20,21 +20,21 @@
 
         <div class="container ">
             <header class="row header mt-3  justify-content-between text-center">
-                <figure class="col-auto" " >
+                <figure class="col-auto">
                     <img src="images/logo.png " alt="USMP - Logo ">
                 </figure>
-                <figure class="col-auto figure " >
-                        <img class="img-fix figure-img img-fluid rounded-circle " src="images/user-black.png " alt="User ">
-                        <figcaption class="figure-caption "><a href="# " class="link-color-fix "><b>Cerrar Sesión</b></a></figcaption>
+                <figure class="col-auto figure">
+                    <img class="img-fix figure-img img-fluid rounded-circle " src="images/user-black.png " alt="User ">
+                    <figcaption class="figure-caption "><a href="# " class="link-color-fix "><b>Cerrar Sesión</b></a></figcaption>
                 </figure>
             </header>
             <hr>
-            <section class="row mt-3 justify-content-center"  >
-                <nav class="nav col-12 col-sm-3 " id="menu" style="border:1px solid black" >
-                    <ul class="nav flex-column pb-0" >
+            <section class="row mt-3 ">
+                <nav class="nav col-12 col-sm-3 justify-content-center justify-content-sm-start" id="menu">
+                    <ul class="nav flex-sm-column flex-row justify-content-center justify-content-sm-start pb-0 ">
                         <li class="nav-item ">
                             <a href="curriculumView.html" class="menu-link nav-link active">
-                               Datos Personales
+                                Datos Personales
                             </a>
                         </li>
                         <li class="nav-item ">
@@ -42,70 +42,69 @@
                                 Estudios
                             </a>
                         </li>
-                        <li class="nav-item "> 
-                            <a href="# " class="menu-link nav-link ">
+                        <li class="nav-item ">
+                            <a href="competencias.html " class="menu-link nav-link ">
                                 Competencias
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="# " class="menu-link nav-link ">
-                               Experencia Laboral
+                            <a href="experiencia.html" class="menu-link nav-link ">
+                                Experencia Laboral
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="# " class="menu-link nav-link ">
+                            <a href="idiomas" class="menu-link nav-link ">
                                 Idiomas
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="# " class="menu-link nav-link ">
+                            <a href="certificacionesN.html" class="menu-link nav-link ">
                                 Certificaciones Nacionales
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="# " class="menu-link nav-link ">
+                            <a href="certificacionesI.html" class="menu-link nav-link ">
                                 Certificaciones Internacionales
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="# " class="menu-link nav-link ">
+                            <a href="otrasActividades.html" class="menu-link nav-link ">
                                 Otras Actividades
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="# " class="menu-link nav-link ">
-                               Información Adicional
+                            <a href="infoAdicional" class="menu-link nav-link ">
+                                Información Adicional
                             </a>
                         </li>
-                        <li class="nav-item nav-last-item" >
-                            <a href="# " class="menu-link nav-link ">
+                        <li class="nav-item nav-last-item">
+                            <a href="referencias.html" class="menu-link nav-link ">
                                 Referencias
                             </a>
                         </li>
-                        
-                        <li class="nav-item"> 
-                             <a href="" class="menu-link nav-link text-primary">
-                                 Descargar pdf
-                                </a>
+
+                        <li class="nav-item">
+                            <a href="" class="menu-link nav-link text-primary">
+                                Descargar pdf
+                            </a>
                         </li>
 
                     </ul>
-                  
-                   
+
+
                 </nav>
-               
-          
-                <div class="col-9 form-fix ">
+
+
+                <div class="col-12 col-sm-9 form-fix ">
                     <form action="/">
-                        <div class="row form-group mt-0 align-items-center justify-content-between" >
-                            <h3 class="col-auto"  >Datos Personales</h3>
+                        <div class="row form-group mt-0 align-items-center justify-content-between">
+                            <h3 class="col-auto">Datos Personales</h3>
                             <div class="col-auto">
-                                    <input type="file" id="file1" name="image" accept="image/*" capture style="display:none">
-                                    <img src="images/noPic.jpg" id="upfile1" class="input-fix-img" 
-                                    />
+                                <input type="file" id="file1" name="image" accept="image/*" capture style="display:none">
+                                <img src="images/noPic.jpg" id="upfile1" class="input-fix-img" />
                             </div>
-                        </div>    
-                         
+                        </div>
+
                         <div class="row form-group">
                             <div class="col-6 mb-3 ">
                                 <label for="nombre">Nombre(s): </label>
@@ -119,7 +118,7 @@
 
                             <div class="col-6 mb-3 ">
                                 <label for="fecha">Fecha de nacimiento:</label>
-                                <input type="date" class="form-control"  name="fecha" id="fecha" required placeholder="dd/mm/año">
+                                <input type="date" class="form-control" name="fecha" id="fecha" required placeholder="dd/mm/año">
                             </div>
 
                             <div class="col-6 mb-3 ">
@@ -136,8 +135,8 @@
 
                             <div class="col-6 mb-3 ">
                                 <label for="nacionalidad">Nacionalidad:</label>
-                                <select id="nacionalidad" class="custom-select custom-select-sm">
-                                    <option selected>Seleccione</option>
+                                <select id="nacionalidad" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
                                     <option value="1">Perú</option>
                                     <option value="2">Brazil</option>
                                     <option value="3">Rumani</option>
@@ -146,8 +145,8 @@
 
                             <div class="col-6 mb-3 ">
                                 <label for="estado">Estado Cívil:</label>
-                                <select id="estado" class="custom-select custom-select-sm">
-                                    <option selected>Seleccione</option>
+                                <select id="estado" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
                                     <option value="1">Soltero </option>
                                     <option value="2">Casado</option>
                                     <option value="3">Divorciado</option>
@@ -161,8 +160,8 @@
 
                             <div class="col-4 mb-3 ">
                                 <label for="distrito">Distrito:</label>
-                                <select id="distrito" class="custom-select custom-select-sm">
-                                    <option selected>Seleccione</option>
+                                <select id="distrito" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
                                     <option value="1">Lince</option>
                                     <option value="2">Breña</option>
                                     <option value="3">La Molina</option>
@@ -171,8 +170,8 @@
 
                             <div class="col-4 mb-3 ">
                                 <label for="provincia">Provincia:</label>
-                                <select id="provincia" class="custom-select custom-select-sm">
-                                    <option selected>Seleccione</option>
+                                <select id="provincia" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
                                     <option value="1">Lima </option>
                                     <option value="2">Callao</option>
                                     <option value="3">Lambayeque</option>
@@ -180,23 +179,23 @@
                             </div>
                             <div class="col-4 mb-3 ">
                                 <label for="departamento">Departamento:</label>
-                                <select id="departamento" class="custom-select custom-select-sm">
-                                    <option selected>Seleccione</option>
+                                <select id="departamento" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
                                     <option value="1">Lima</option>
-                                    
+
                                 </select>
                             </div>
                             <div class="col-6 mb-3 ">
                                 <label for="tel">Teléfono:</label>
-                                <input type="tel" class="form-control"  name="tel" id="tel" required placeholder="Ingrese teléfono">
+                                <input type="tel" class="form-control" name="tel" id="tel" required placeholder="Ingrese teléfono">
                             </div>
                             <div class="col-6 mb-3 ">
                                 <label for="cel">Celular:</label>
-                                <input type="tel" class="form-control"  name="cel" id="cel" required placeholder="Ingrese celular">
-                                    
-                              
+                                <input type="tel" class="form-control" name="cel" id="cel" required placeholder="Ingrese celular">
+
+
                             </div>
-                            
+
                             <div class="col-12 mb-3 ">
                                 <label for="email">Email:</label>
                                 <input type="email" class="form-control " placeholder="Ingrese su correo electrónico" name="email" id="email" required>
@@ -213,22 +212,22 @@
                                 </div>
                             </div>
                             <div class="col-12 mb-3 ">
-                                <p >Si marco <b>Si</b>, indicar el tipo de discapacidad:</p>
-                                 <select id="discaoa" class="custom-select custom-select-sm">
-                                    <option selected>Seleccione</option>
+                                <p>Si marco <b>Si</b>, indicar el tipo de discapacidad:</p>
+                                <select id="discaoa" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
                                     <option value="1">Discapacidad física</option>
                                     <option value="1">Discapacidad mental</option>
-                                    
-                                    
-                                </select> 
+
+
+                                </select>
                             </div>
 
                             <div class="col-12 mt-2 mb-3 d-flex justify-content-center justify-content-lg-end ">
                                 <button class="btn btn-primary btn-lg  align-self-center " type="submit">Guardar</button>
-    
+
                             </div>
 
-                            
+
                         </div>
 
 
@@ -242,13 +241,13 @@
 
 
     </div>
-  
+
 
     <footer class="footer-fix ">
         <p class="text-dark ">
-             Sede Lima: Jr. Las Calandrias N° 151 – 291 Santa Anita, Lima - Perú. Teléfono: (511) 362-0064. <br> Copyright
-                © 2018, Todos los Derechos Reservados - FIA, USMP.
-                
+            Sede Lima: Jr. Las Calandrias N° 151 – 291 Santa Anita, Lima - Perú. Teléfono: (511) 362-0064. <br> Copyright
+            © 2018, Todos los Derechos Reservados - FIA, USMP.
+
         </p>
     </footer>
 

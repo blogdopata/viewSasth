@@ -103,3 +103,10 @@ body{
     height: 93px;
     cursor: pointer;
 }
+.fix-select-inline{
+    width:160px;
+}
+textarea.textarea-fix-lg{
+    height: 16em;
+
+}
