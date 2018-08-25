@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Luis Toledo">
     <meta name="description" content="Implementación para el Sistema de .... ">
-    <title>Curriculum View</title>
+    <title>Referencias</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/general.css">
@@ -33,7 +33,7 @@
                 <nav class="nav col-12 col-sm-3 justify-content-center justify-content-sm-start" id="menu">
                     <ul class="nav flex-sm-column flex-row justify-content-center justify-content-sm-start pb-0 ">
                         <li class="nav-item ">
-                            <a href="curriculumView.html" class="menu-link nav-link active">
+                            <a href="curriculumView.html" class="menu-link nav-link ">
                                 Datos Personales
                             </a>
                         </li>
@@ -78,10 +78,11 @@
                             </a>
                         </li>
                         <li class="nav-item nav-last-item">
-                            <a href="referencias.html" class="menu-link nav-link ">
+                            <a href="referencias.html" class="menu-link nav-link active ">
                                 Referencias
                             </a>
                         </li>
+
                         <li class="nav-item">
                             <a href="viewpdf.html" class="menu-link nav-link text-primary">
                                 Descargar pdf
@@ -97,16 +98,23 @@
                 <div class="col-12 col-sm-9 form-fix ">
                     <form action="/">
                         <div class="row form-group mt-0 align-items-center justify-content-between">
-                            <h3 class="col-auto">Datos Personales</h3>
+                            <h3 class="col-auto">Referencias</h3>
                             <div class="col-auto">
-                                <input type="file" id="file1" name="image" accept="image/*" capture style="display:none">
-                                <img src="images/noPic.jpg" id="upfile1" class="input-fix-img" />
+                                <figure>
+                                    <a href="#" class="text-info">
+                                        <img src="images/addimg.png" alt="">
+                                        <span>Agregar referencia</span>
+                                    </a>
+                                </figure>
                             </div>
                         </div>
 
                         <div class="row form-group">
+                            <p class="col-auto text-dark">Tu referencia recibirá un email para confirmar la información de
+                                contacto
+                            </p>
                             <div class="col-6 mb-3 ">
-                                <label for="nombre">Nombre(s): </label>
+                                <label for="nombre">Nombre: </label>
                                 <input type="text " class="form-control " placeholder="Ingrese nombre(s)" name="nombre " id="nombre" required>
                             </div>
 
@@ -114,112 +122,49 @@
                                 <label for="apellido">Apellidos:</label>
                                 <input type="text " class="form-control " placeholder="Ingrese apellidos " name="apellido " id="apellido" required>
                             </div>
-
-                            <div class="col-6 mb-3 ">
-                                <label for="fecha">Fecha de nacimiento:</label>
-                                <input type="date" class="form-control" name="fecha" id="fecha" required placeholder="dd/mm/año">
-                            </div>
-
-                            <div class="col-6 mb-3 ">
-                                <p>Género:</p>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="generoM" name="genero" class="custom-control-input" required>
-                                    <label class="custom-control-label" for="generoM">Masculino</label>
-                                </div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="generoF" name="genero" class="custom-control-input" required>
-                                    <label class="custom-control-label" for="generoF">Femenino</label>
-                                </div>
-                            </div>
-
-                            <div class="col-6 mb-3 ">
-                                <label for="nacionalidad">Nacionalidad:</label>
-                                <select id="nacionalidad" class="custom-select custom-select-sm" required>
-                                    <option value="" selected>Seleccione</option>
-                                    <option value="1">Perú</option>
-                                    <option value="2">Brazil</option>
-                                    <option value="3">Rumani</option>
-                                </select>
-                            </div>
-
-                            <div class="col-6 mb-3 ">
-                                <label for="estado">Estado Cívil:</label>
-                                <select id="estado" class="custom-select custom-select-sm" required>
-                                    <option value="" selected>Seleccione</option>
-                                    <option value="1">Soltero </option>
-                                    <option value="2">Casado</option>
-                                    <option value="3">Divorciado</option>
-                                </select>
-                            </div>
-
-                            <div class="col-12 mb-3 ">
-                                <label for="direccion">Dirección:</label>
-                                <input type="text " class="form-control " placeholder="Ingrese dirección" name="direccion" id="direccion" required>
-                            </div>
-
-                            <div class="col-4 mb-3 ">
-                                <label for="distrito">Distrito:</label>
-                                <select id="distrito" class="custom-select custom-select-sm" required>
-                                    <option value="" selected>Seleccione</option>
-                                    <option value="1">Lince</option>
-                                    <option value="2">Breña</option>
-                                    <option value="3">La Molina</option>
-                                </select>
-                            </div>
-
-                            <div class="col-4 mb-3 ">
-                                <label for="provincia">Provincia:</label>
-                                <select id="provincia" class="custom-select custom-select-sm" required>
-                                    <option value="" selected>Seleccione</option>
-                                    <option value="1">Lima </option>
-                                    <option value="2">Callao</option>
-                                    <option value="3">Lambayeque</option>
-                                </select>
-                            </div>
-                            <div class="col-4 mb-3 ">
-                                <label for="departamento">Departamento:</label>
-                                <select id="departamento" class="custom-select custom-select-sm" required>
-                                    <option value="" selected>Seleccione</option>
-                                    <option value="1">Lima</option>
-
-                                </select>
-                            </div>
-                            <div class="col-6 mb-3 ">
-                                <label for="tel">Teléfono:</label>
-                                <input type="tel" class="form-control" name="tel" id="tel" required placeholder="Ingrese teléfono">
-                            </div>
-                            <div class="col-6 mb-3 ">
-                                <label for="cel">Celular:</label>
-                                <input type="tel" class="form-control" name="cel" id="cel" required placeholder="Ingrese celular">
-
-
-                            </div>
-
-                            <div class="col-12 mb-3 ">
+                            <div class="col-12 col-sm-6 mb-3 ">
                                 <label for="email">Email:</label>
-                                <input type="email" class="form-control " placeholder="Ingrese su correo electrónico" name="email" id="email" required>
+                                <input type="email" class="form-control " placeholder="Ingrese email de contacto" name="email" id="email" required>
                             </div>
+                            <div class="w-100"></div>
+
                             <div class="col-6 mb-3 ">
-                                <label>Discapacidad: </label>
+                                <label for="tel">Teléfono de contacto:</label>
+                                <input type="tel" class="form-control" name="tel" id="tel" required placeholder="Ingrese teléfono de contacto: (+511) 993-676-955">
+                            </div>
+
+                            <div class="col-6 mb-3 ">
+                                <p>Tipo de referencia</p>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="dsi" name="discapacidad" class="custom-control-input" required>
-                                    <label class="custom-control-label" for="dsi">Si</label>
+                                    <input type="radio" id="laboralref" name="referencia" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="laboralref">Laboral</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="dno" name="discapacidad" class="custom-control-input" required>
-                                    <label class="custom-control-label" for="dno">No</label>
+                                    <input type="radio" id="generoF" name="referencia" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="generoF">De estudios</label>
                                 </div>
                             </div>
-                            <div class="col-12 mb-3 ">
-                                <p>Si marco <b>Si</b>, indicar el tipo de discapacidad:</p>
-                                <select id="discaoa" class="custom-select custom-select-sm" required>
+
+                            <div class="col-6 mb-3 ">
+                                <label for="relacion">Relación:</label>
+                                <select id="relacion" class="custom-select custom-select-sm" required>
                                     <option value="" selected>Seleccione</option>
-                                    <option value="1">Discapacidad física</option>
-                                    <option value="1">Discapacidad mental</option>
-
-
+                                    <option value="1">Fue mi Jefe</option>
+                                    <option value="2">Es el dueño</option>
+                                    <option value="3">Jefe general</option>
                                 </select>
                             </div>
+
+                            <div class="col-6 mb-3 ">
+                                <label for="experiencia">Experencia relacionada:</label>
+                                <select id="experiencia" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
+                                    <option value="1">Analisa de sistemas </option>
+                                    <option value="2">Admin. de Base de datos</option>
+                                    <option value="3">Soporte</option>
+                                </select>
+                            </div>
+
 
                             <div class="col-12 mt-2 mb-3 d-flex justify-content-center justify-content-lg-end ">
                                 <button class="btn btn-primary btn-lg  align-self-center " type="submit">Guardar</button>

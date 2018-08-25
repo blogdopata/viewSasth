@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Luis Toledo">
     <meta name="description" content="Implementación para el Sistema de .... ">
-    <title>Competencias</title>
+    <title>Otras Actividades</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/general.css">
@@ -43,12 +43,12 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="competencias.html " class="menu-link nav-link  active">
+                            <a href="competencias.html " class="menu-link nav-link ">
                                 Competencias
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="experiencia.html" class="menu-link nav-link ">
+                            <a href="experiencia.html" class="menu-link nav-link  ">
                                 Experencia Laboral
                             </a>
                         </li>
@@ -68,12 +68,12 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="otrasActividades.html" class="menu-link nav-link ">
+                            <a href="otrasActividades.html" class="menu-link nav-link active ">
                                 Otras Actividades
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="infoAdicional" class="menu-link nav-link ">
+                            <a href="infoAdicional.html" class="menu-link nav-link ">
                                 Información Adicional
                             </a>
                         </li>
@@ -98,17 +98,28 @@
                 <div class="col-12 col-sm-9 form-fix ">
                     <form action="/">
                         <div class="row form-group mt-0 align-items-center justify-content-between">
-                            <h3 class="col-auto">Competencias</h3>
-
+                            <h3 class="col-auto">Otras Actividades</h3>
+                            <div class="col-auto">
+                                <figure>
+                                    <a href="#" class="text-info">
+                                        <img src="images/addimg.png" alt="">
+                                        <span>Agregar Certificación</span>
+                                    </a>
+                                </figure>
+                            </div>
                         </div>
 
                         <div class="row form-group">
-                            <div class="col-12 col-sm-12 mb-3 ">
-                                <label for="competencias"> <b>¿Cuáles son tus Competencias?</b> </label>
-                                <textarea row="10" id="competencias" class="form-control textarea-fix-lg"></textarea>
+                            <div class="col-12 col-sm-6 mb-3 ">
+                                <label for="titulo"> <b>Título</b> </label>
+                                <input class="form-control" id="titulo">
                             </div>
 
                             <div class="w-100"></div>
+                            <div class="col-12 col-sm-12 mb-3 ">
+                                <label for="descripción"> <b>Descripción</b> </label>
+                                <textarea row="10" id="descripción" class="form-control textarea-fix-lg"></textarea>
+                            </div>
 
 
                             <div class="col-12 mt-2 mb-3 d-flex justify-content-center justify-content-lg-end ">

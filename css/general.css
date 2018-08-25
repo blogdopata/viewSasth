@@ -110,3 +110,8 @@ textarea.textarea-fix-lg{
     height: 16em;
 
 }
+
+iframe.frame-fix{
+    width:800px; 
+    height:900px;
+}

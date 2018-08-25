@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Luis Toledo">
     <meta name="description" content="Implementación para el Sistema de .... ">
-    <title>Estudios</title>
+    <title>Certificaciones Internacionales</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/general.css">
@@ -29,7 +29,7 @@
                 </figure>
             </header>
             <hr>
-            <section class="row mt-3 ">
+            <section class="row mt-3">
                 <nav class="nav col-12 col-sm-3 justify-content-center justify-content-sm-start" id="menu">
                     <ul class="nav flex-sm-column flex-row justify-content-center justify-content-sm-start pb-0 ">
                         <li class="nav-item ">
@@ -38,7 +38,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="estudios.html " class="menu-link nav-link active">
+                            <a href="estudios.html " class="menu-link nav-link">
                                 Estudios
                             </a>
                         </li>
@@ -63,7 +63,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="certificacionesI.html" class="menu-link nav-link ">
+                            <a href="certificacionesI.html" class="menu-link nav-link active ">
                                 Certificaciones Internacionales
                             </a>
                         </li>
@@ -73,7 +73,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="infoAdicional" class="menu-link nav-link ">
+                            <a href="infoAdicional.html" class="menu-link nav-link ">
                                 Información Adicional
                             </a>
                         </li>
@@ -98,117 +98,75 @@
                 <div class="col-12 col-sm-9 form-fix ">
                     <form action="/">
                         <div class="row form-group mt-0 align-items-center justify-content-between">
-                            <h3 class="col-auto">Estudios</h3>
+                            <h3 class="col-auto">Certificaciones Internacionales </h3>
                             <div class="col-auto">
                                 <figure>
                                     <a href="#" class="text-info">
                                         <img src="images/addimg.png" alt="">
-                                        <span>Agregar estudios</span>
+                                        <span>Agregar C.I</span>
                                     </a>
                                 </figure>
                             </div>
                         </div>
 
                         <div class="row form-group">
-                            <div class="col-12 col-sm-6 mb-3 ">
-                                <label for="pais">País: </label>
-                                <select id="pais" class="custom-select custom-select-sm" required>
-                                    <option value="" selected>Seleccione</option>
-                                    <option value="1">Perú</option>
-                                    <option value="2">Brazil</option>
-                                    <option value="3">Rumani</option>
-                                </select>
+
+
+                            <div class="col-6 mb-3 ">
+                                <label for="nombre">Nombre: </label>
+                                <input type="text" id="nombre" class="form-control" required>
                             </div>
                             <div class="w-100"></div>
-                            <div class="col-4 mb-3 ">
-                                <label for="tipoestu">Tipo de estudio: </label>
-                                <select id="tipoestu" class="custom-select custom-select-sm" required>
-                                    <option value="" selected>Seleccione</option>
-                                    <option value="1">Estudiante</option>
-                                    <option value="2">Bachiller</option>
-                                    <option value="3">Egresdo</option>
-                                </select>
-                            </div>
 
-                            <div class="col-4 mb-3 ">
-                                <label for="estado">Estado: </label>
-                                <select id="estado" class="custom-select custom-select-sm" required>
-                                    <option value="" selected>Seleccione</option>
-                                    <option value="1">En Curso</option>
-                                    <option value="2">Culminado</option>
-                                    <option value="3">En Pausa</option>
-                                </select>
-                            </div>
-
-                            <div class="col-4 mb-3 ">
-                                <label for="ciclo">Ciclo: </label>
-                                <select id="ciclo" class="custom-select custom-select-sm" required>
-                                    <option value="" selected>Seleccione</option>
-                                    <option value="1">I</option>
-                                    <option value="2">II</option>
-                                    <option value="3">III</option>
-                                </select>
+                            <div class="col-6 mb-3 ">
+                                <label for="descripcion">Descripción: </label>
+                                <input type="text" id="descripcion" class="form-control" required>
                             </div>
 
                             <div class="col-6 mb-3 ">
-                                <label for="titulo">Título de carrera:</label>
-                                <input type="text" class="form-control" name="titulo" id="titulo" required placeholder="Ingrese título">
+                                <label for="lugar">Lugar: </label>
+                                <input type="text" id="lugar" class="form-control" required>
                             </div>
-
-                            <div class="col-6 mb-3 ">
-                                <label for="area">Área de estudio:</label>
-                                <select id="area" class="custom-select custom-select-sm" required>
+                            <div class="col-3 mb-3 ">
+                                <label for="anio">Año: </label>
+                                <select id="anio" class="custom-select custom-select-sm" required>
                                     <option value="" selected>Seleccione</option>
-                                    <option value="1">Educación</option>
-                                    <option value="2">T.Is</option>
-                                    <option value="3">Electrónica</option>
+                                    <option value="1">2016</option>
+                                    <option value="2">2017</option>
+                                    <option value="3">2018</option>
+                                </select>
+                            </div>
+
+                            <div class="col-3 mb-3 ">
+                                <label for="pais">País </label>
+                                <select id="pais" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
+                                    <option value="1">EEUU</option>
+                                    <option value="2">España</option>
+
+                                </select>
+                            </div>
+                            <div class="col-3 mb-3 ">
+                                <label for="departamento">Departamento: </label>
+                                <select iD="departamento" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
+                                    <option value="1">California</option>
+                                    <option value="2">Texas</option>
+
+                                </select>
+                            </div>
+                            <div class="col-3 mb-3 ">
+                                <label for="provincia">Provincia: </label>
+                                <select id="provincia" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
+                                    <option value="1">California</option>
+                                    <option value="2">Texas</option>
+
                                 </select>
                             </div>
 
 
-                            <div class="col-6 mb-3 ">
-                                <label>Fecha de inicio:</label> <br>
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Mes</option>
-                                    <option value="1">Enero</option>
-                                    <option value="2">Febrero</option>
-                                    <option value="3">Marzo</option>
-                                </select>
 
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Año</option>
-                                    <option value="1">2010</option>
-                                    <option value="2">2012</option>
-                                    <option value="3">2014</option>
-                                </select>
-                            </div>
-
-                            <div class="col-6 mb-3 ">
-                                <label>Fecha de Fin:</label> <br>
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Mes</option>
-                                    <option value="1">Enero</option>
-                                    <option value="2">Febrero</option>
-                                    <option value="3">Marzo</option>
-                                </select>
-
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Año</option>
-                                    <option value="1">2010</option>
-                                    <option value="2">2012</option>
-                                    <option value="3">2014</option>
-                                </select>
-                            </div>
-
-                            <div class="col-12 mb-3">
-                                <label for="institución">Institución:</label>
-                                <input type="text" id="institucion" class="form-control" required>
-                            </div>
-
-                            <div class="col-12 col-sm-2 mb-3">
-                                <label for="prom">Promedio:</label>
-                                <input type="number" id="prom" class="form-control" required>
-                            </div>
 
 
                             <div class="col-12 mt-2 mb-3 d-flex justify-content-center justify-content-lg-end ">

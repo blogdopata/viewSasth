@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Luis Toledo">
     <meta name="description" content="Implementación para el Sistema de .... ">
-    <title>Competencias</title>
+    <title>Idiomas</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/general.css">
@@ -29,7 +29,7 @@
                 </figure>
             </header>
             <hr>
-            <section class="row mt-3 ">
+            <section class="row mt-3">
                 <nav class="nav col-12 col-sm-3 justify-content-center justify-content-sm-start" id="menu">
                     <ul class="nav flex-sm-column flex-row justify-content-center justify-content-sm-start pb-0 ">
                         <li class="nav-item ">
@@ -43,7 +43,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="competencias.html " class="menu-link nav-link  active">
+                            <a href="competencias.html " class="menu-link nav-link ">
                                 Competencias
                             </a>
                         </li>
@@ -53,7 +53,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="idiomas.html" class="menu-link nav-link ">
+                            <a href="idiomas.html" class="menu-link nav-link active  ">
                                 Idiomas
                             </a>
                         </li>
@@ -73,7 +73,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="infoAdicional" class="menu-link nav-link ">
+                            <a href="infoAdicional.html" class="menu-link nav-link ">
                                 Información Adicional
                             </a>
                         </li>
@@ -98,17 +98,46 @@
                 <div class="col-12 col-sm-9 form-fix ">
                     <form action="/">
                         <div class="row form-group mt-0 align-items-center justify-content-between">
-                            <h3 class="col-auto">Competencias</h3>
-
+                            <h3 class="col-auto">Idiomas</h3>
+                            <div class="col-auto">
+                                <figure>
+                                    <a href="#" class="text-info">
+                                        <img src="images/addimg.png" alt="">
+                                        <span>Agregar Idioma</span>
+                                    </a>
+                                </figure>
+                            </div>
                         </div>
 
                         <div class="row form-group">
-                            <div class="col-12 col-sm-12 mb-3 ">
-                                <label for="competencias"> <b>¿Cuáles son tus Competencias?</b> </label>
-                                <textarea row="10" id="competencias" class="form-control textarea-fix-lg"></textarea>
+
+
+                            <div class="col-6 mb-3 ">
+                                <label for="idioma">Idioma: </label>
+                                <input type="text" id="idioma" class="form-control" required>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-6 mb-3 ">
+                                <label for="noral">Nivel Oral: </label>
+                                <select id="noral" class="custom-select custom-select-sm" required>
+                                    <option value="" selected>Seleccione</option>
+                                    <option value="1">Started</option>
+                                    <option value="2">Intermedio</option>
+                                    <option value="3">Avanzado</option>
+                                </select>
                             </div>
 
-                            <div class="w-100"></div>
+                            <div class="col-6 mb-3 ">
+                                <label for="nescrito">Nivel de Escrito: </label>
+                                <select id="nescrito" class="custom-select custom-select-sm" required>
+                                    <option value="1">Started</option>
+                                    <option value="2">Intermedio</option>
+                                    <option value="3">Avanzado</option>
+                                </select>
+                            </div>
+
+
+
 
 
                             <div class="col-12 mt-2 mb-3 d-flex justify-content-center justify-content-lg-end ">
