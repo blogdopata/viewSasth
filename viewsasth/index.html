@@ -70,8 +70,6 @@
                             
                             </ul>
                          </nav>
-                         
-
 
                     </div>
                     
@@ -94,7 +92,7 @@
                     <form action="/ ">
                         <div class="row form-group justify-content-start " >
 
-                            <label for="facultad " class="col-3 col-sm-3 col-form-label " style="border:1px solid red "><b>  Facultad:</b></label>
+                            <label for="facultad " class="col-3 col-sm-3 col-form-label " style="border:1px solid red "><b>Facultad:</b></label>
 
                             <div class="col-5 col-sm-5 mt-0 " style="border:1px solid red ">
                                 <select id="facultad " class="custom-select custom-select-sm " required>
@@ -139,7 +137,7 @@
                             <div class="col-8 col-sm-5 mb-3 ">
                                 <input type="text " class="form-control " placeholder="Número decima con 2 y en soles" name="remuneracion" id="remuneracion" required>
                             </div>
-                            <p class="mb-0"> <i> *Según presupuesto de la Facultad o Dependencia y Escala Salarial </i></p>
+                            <p class="mb-0 p-fix-size" > <i> *Según presupuesto de la Facultad o Dependencia y Escala Salarial </i></p>
                         </div>
 
                         <div class="row form-group mt-0">
@@ -183,7 +181,7 @@
                                         </div>
                                         <div class="w-100"></div>
 
-                                        <div class="col-12 col-sm-7  mb-3 mt-3 " style="border:1px solid red">
+                                        <div class="col-12  col-md-7   mt-3 " style="border:1px solid red">
                                             <label for="requistos"><b> Tipo de vacante:</b> </label>
                                             <div class="w-100"></div>
                                             <div class="custom-control custom-radio custom-control-inline mt-2">
@@ -195,14 +193,56 @@
                                                 <input type="radio" id="nueva" name="vacante" class="custom-control-input" required>
                                                 <label class="custom-control-label" for="nueva">Nueva</label>
                                             </div>
+
                                             <p class="mt-3 mb-0" ><b>Si es reemplazo colocar apellido y nombre de la persona a quien reemplaza.</b> </p>
                                             <p class="mt-0" ><b>Si es vacante nueva, sustentar necesidad.</b> </p>  
                                             
                                             <input type="text " class="form-control " placeholder="Nombre de la persona "  required>
-                                        </div>    
 
+                                        </div> 
                                 </div>
                         </div>        
+  
+                        <div class="row form-group mt-0">
+
+                            <label for="cargo" class="col-3 col-sm-3 mb-0 align-self-end" style="border:1px solid red; "> <b>Cargo:</b></label>
+
+                            <div class="col-8 col-md-6  text-center" style="border:1px solid red;">
+                                <p> <b>      ADMINISTRATIVO</b> </p>
+                                <input type="text " class="form-control " placeholder="Ingrese cargo  " name="cargo" id="cargo" required>
+                            </div>
+
+                            <div class="w-100"></div>
+                            <label for="horario " class="col-3 mb-0 align-self-end" style="border:1px solid red; "> <b>Horario:</b></label>
+
+                            <div class="col-8 col-md-6  text-center" style="border:1px solid red;">
+                               
+                                <input type="text " class="form-control " placeholder="Ingrese horario " name="horario" id="horario " required>
+                            </div>
+
+                            <div class="w-100"></div>
+
+
+
+                            <label for="area" class="col-3 col-sm-3 mb-0 align-self-end" style="border:1px solid red; "> <b>Área:</b></label>
+
+                            <div class="col-8 col-md-6  text-center" style="border:1px solid red;">
+                                <p> <b>      PRACTICANTE</b> </p>
+                                <input type="text " class="form-control " placeholder="Ingrese área  " name="area" id="area" required>
+                            </div>
+
+                            <div class="w-100"></div>
+                            <label for="horario " class="col-3 mb-0 align-self-end" style="border:1px solid red; "> <b>Horario:</b></label>
+
+                            <div class="col-8  col-md-6 text-center" style="border:1px solid red;">
+                               
+                                <input type="text " class="form-control " placeholder="Ingrese horario " name="horario" id="horario " required>
+                            </div>
+                                 
+                            
+                            
+                        </div>
+        
 
 
 
