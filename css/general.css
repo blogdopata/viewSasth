@@ -87,8 +87,8 @@ body{
 }
 .btn-fix{
    
-    padding-left:50px;
-    padding-right: 50px;
+    padding-left:40px;
+    padding-right: 40px;
 }
 .img-fix{
     border: 2px solid #000;
@@ -131,7 +131,7 @@ iframe.frame-fix{
 }
 .btn-fix-success{
     font-size: 0.8em;
-    padding: 0;
+    padding: 2px 4px;
 }
 
 /* de sm (landscape phones, 576px and up) */
