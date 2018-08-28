@@ -13,6 +13,7 @@ body{
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+     overflow-x: hidden;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -124,7 +125,14 @@ iframe.frame-fix{
     margin: 0;
 }
 
-
+.p-name-welcome{
+    font-size: 1em;
+   
+}
+.btn-fix-success{
+    font-size: 0.8em;
+    padding: 0;
+}
 
 /* de sm (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -132,12 +140,16 @@ iframe.frame-fix{
         font-size: 2em;
         margin: 0;
     }
+   
 
  }
 
 /* de MD (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-    
+    .btn-fix-success{
+        font-size: 1em;
+        padding: 5px 10px
+    }
  }
 
 /* de LG (desktops, 992px and up)*/
@@ -150,4 +162,8 @@ iframe.frame-fix{
     .h1-fix{
     
     } 
+    .p-name-welcome{
+        font-size: 1.5em;
+    }
+
 }
