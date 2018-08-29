@@ -133,7 +133,14 @@ iframe.frame-fix{
     font-size: 0.8em;
     padding: 2px 4px;
 }
+.h2-fix-prop{
+    font-size: 2em;
+   color: rgba(176,3,43,1);
 
+}
+.p-aviso{
+    font-size: 1em;
+}
 /* de sm (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .h1-fix{
@@ -154,7 +161,9 @@ iframe.frame-fix{
 
 /* de LG (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-
+    .p-aviso{
+        font-size: 1.3em;
+    }
  }
 
 /* de XL , 1200px and up)*/
