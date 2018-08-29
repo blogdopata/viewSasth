@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Luis Toledo">
+    <meta name="description" content="Implementación para el Sistema de .... ">
+    <title>Sistemas de Atracción y Selección del Talento Humano</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/general.css">
+
+</head>
+
+<body class="main">
+
+    <div class="container-fluid main-content">
+
+        <div class="container ">
+
+            <header class="row header mt-3 justify-content-center justify-content-lg-start" ">
+                <figure class="col-auto " >
+                    <img src="../images/logo.png " alt="USMP - Logo ">
+                </figure>
+
+                <h1 class="col-sm-9 col-12 align-self-center text-white text-center h1-fix ">Sistema de Atracción y Selección del Talento Humano</h1>
+
+            </header>
+
+            <div class="row justify-content-center align-items-center justify-content-md-between "  >
+                <p class="col-6 text-white p-name-welcome "  >
+                    Bienvenido Personal de Sistemas  - Rectorado
+                </p>
+                <figure class="col-auto figure mb-0 " >
+                       <a href=" "> <img class="img-fix figure-img img-fluid rounded-circle " src="../images/editPic.jpg
+                " alt="Editar foto ">
+                       </a>
+                        
+                </figure>
+            </div>
+            <hr>
+
+            <div class="row justify-content-between align-items-center " >
+              
+                    <div class="col-sm-10 col-9 " >
+                        <nav class="nav " id="menu "> 
+                            <ul class="nav ">
+                                <li class="nav-item ">
+                                    <a href="index.html " class="menu-link nav-link">
+                                        Requerimiento de Talento Humano
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="perfil.html " class="menu-link nav-link active">
+                                        Perfil para el Puesto
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="notificacioness.html " class="menu-link nav-link ">
+                                        Notificaciones
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="registroentrevista.html " class="menu-link nav-link ">
+                                        Registro de Entrevista
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                         </nav>
+
+                    </div>
+                    
+                    <nav class="nav col-sm-2 col-3 d-flex justify-content-end " >
+                        <p>
+                             <a href="# " class="btn btn-success btn-fix-success ">Editar Perfil</a>
+                        </p>
+                        <p class="mb-0 ">
+                            <a href="# " class="btn btn-success btn-fix-success ">Cerrar sesión</a>
+                        </p>
+                    </nav>
+
+
+            </div>
+
+            
+            <div class="row ">
+                            
+                <div class="col-12 form-fix mt-3 ">
+                    <form action="/ ">
+                        <div class="row form-group justify-content-start " >
+
+                            <label for="facultad " class="col-3 col-form-label"><b>Facultad:</b></label>
+
+                            <div class="col-5 col-sm-5 mt-0 ">
+                                <select id="facultad " class="custom-select custom-select-sm " required>
+                                    <option value=" " selected>Seleccione</option>
+                                    <option value="1 ">Administración y Economía</option>
+                                    <option value="2 ">Fia</option>
+                                    <option value="3 ">Fcctp</option>
+                                </select>
+                            </div>
+
+                            <div class="col-4 col-sm-4 mb-0 ml-0 " style="border:1px solid red;" >
+
+                                <div class="row justify-content-between justify-content-sm-center align-items-center" style="border:1px solid black">
+
+                                    <label class="col-4 col-sm-3 mb-0 pl-0" for="codigo"  style="border:1px solid black"> <b>Código:</b> </label>
+
+                                    <input type="text" class="col-5 col-sm-4"   style="border:1px solid black"placeholder="1" name="codigo" id="codigo" required>
+                                 </div>   
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group row" >
+
+                            <label for="escuela" class="col-3 col-form-label" > <b> Escuela:</b></label>
+
+                            <div class="col-5 col-sm-5 mb-3 ">
+                                <select id="escuela" class="custom-select custom-select-sm " required>
+                                        <option value=" " selected>Seleccione</option>
+                                        <option value="1 ">Administración de Empresas</option>
+                                        <option value="2 ">FICS</option>
+                                    
+                                </select>
+                            </div>
+
+                            <div class="col-4 col-sm-4 mb-0 " >
+                               
+                            <a href="# " class="btn btn-dark text-white btn-fix ">PDF</a>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group row" >
+
+                                <label for="cargo" class="col-3 col-form-label" > <b> Cargo:</b></label>
+    
+                                <div class="col-5 col-sm-5 mb-3 ">
+                                    <select id="cargo" class="custom-select custom-select-sm " required>
+                                            <option value=" " selected>Seleccione</option>
+                                            <option value="1 ">Programador web</option>
+                                            <option value="2 ">Soporte</option>
+                                        
+                                    </select>
+                                </div>
+    
+                               
+    
+                            </div>
+
+
+                        <div class="row form-group mt-0">
+                                <div class="col-12 " style="border:1px solid red">
+                                    <label for="requistos"><b> Requisitos Académicos:</b> </label>
+                                    <div class="w-100"></div>
+
+                                    <div class="row form-group justify-content-around">
+
+                                        <div class="col-5" style="border:1px solid red">
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="administrativo" name="requisito" class="custom-control-input" required>
+                                                <label class="custom-control-label" for="administrativo">Administrativo</label>
+                                                <hr>
+                                            </div>
+                                                
+                                            <div class="w-100"></div>
+                                            
+                                                <label  for="titulado">Titulado</label> 
+                                                <input type="checkbox"  id="titulado">
+                                                   
+                                            <div class="w-100"></div>
+
+                                         
+                                                <label  for="bachiller">Bachiller</label> 
+                                                <input type="checkbox"  id="bachiller">
+                                            
+                                            <div class="w-100"></div>      
+
+                                           
+                                                <label  for="egresado">Egresado</label> 
+                                                <input type="checkbox" class="" id="egresado">
+                                                       
+                                            <div class="w-100"></div>
+
+                                                <label class="" for="estudiante">Estudiante</label> 
+                                                <input type="checkbox"  id="estudiante">
+                                                     
+                                                             
+                                                <label for="ciclo" class="ml-5">Ciclo:</label>
+                                                
+                                                <select id="ciclo" class=" custom-select-sm" required>
+                                                        <option value=" " selected>Seleccione</option>
+                                                        <option value="1 ">I</option>
+                                                        <option value="2 ">II</option>
+                                                        <option value="3 ">IX</option>
+                                                </select>    
+                                                 
+                                                    
+                                            
+                                        </div>
+
+                                   
+
+
+                                        <div class="col-5" style="border:1px solid red;">
+                                            <div class="custom-control custom-radio custom-control-inline mb-5 mb-sm-5">
+                                                <input type="radio" id="practicante" name="requisito" class="custom-control-input" required>
+                                                <label class="custom-control-label" for="practicante">Practicante</label>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            
+                                           
+                                               
+                                        <div class="w-100"></div>
+
+                                     
+                                            <label  for="bachillerP">Bachiller</label> 
+                                            <input type="checkbox"  id="bachillerP">
+                                        
+                                        <div class="w-100"></div>      
+
+                                       
+                                            <label  for="egresadoP">Egresado</label> 
+                                            <input type="checkbox" class="" id="egresadoP">
+                                                   
+                                        <div class="w-100"></div>
+
+                                            <label class="" for="estudianteP">Estudiante</label> 
+                                            <input type="checkbox"  id="estudianteP">
+                                                 
+                                                         
+                                            <label for="ciclo" class="ml-5">Ciclo:</label>
+                                            
+                                            <select id="facultad" class=" custom-select-sm" required>
+                                                    <option value=" " selected>Seleccione</option>
+                                                    <option value="1 ">I</option>
+                                                    <option value="2 ">II</option>
+                                                    <option value="3 ">III</option>
+                                                </select>    
+
+
+
+
+                                        </div>
+
+                                    </div>
+                                </div>        
+                        </div>    
+                       
+
+                        <p class="ml-0 "><b>Idiomas</b></p>
+                        <div class="row form-group mt-0 align-items-end" style="border:1px solid red;">
+                        
+                            <div class="col-auto col-sm-1" style="border:1px solid red">
+
+                            <label for="cargo"  class="col-3 col-sm-4 mb-0 align-self-end pb-2"  > <b>Ingles: </b> </label>
+                            </div>    
+
+                            <div class="col-3 text-center" >
+                                <p> <b>      Nivel Oral</b> </p>
+                                 <select  class="custom-select custom-select-sm " required>
+                                    <option value=" " selected>Seleccione</option>
+                                    <option value="1 ">Basico</option>
+                                    <option value="2 ">Intermedio</option>
+                                    <option value="3 ">Avanzado</option>
+                                </select>
+                            </div>
+
+
+                            <div class="col-3 text-center" >
+                                    <p> <b>      Nivel Escrito</b> </p>
+                                     <select  class="custom-select custom-select-sm " required>
+                                    <option value=" " selected>Seleccione</option>
+                                    <option value="1 ">Basico</option>
+                                    <option value="2 ">Intermedio</option>
+                                    <option value="3 ">Avanzado</option>
+                                </select>
+                            </div>
+                         
+                        </div>
+
+                        <p class="ml-0"><b>Otros Conocimientos: </b>
+                            <span>
+                                    <a href="#" class="text-info">
+                                        <img src="../images/addimg.png" width="30" alt="">
+                                       
+                                    </a>
+                            </span>
+                        
+                        
+                        </p>
+
+                        <div class="row form-group mt-0 align-items-end" style="border:1px solid red;">
+                         avanzar acá 
+                        
+                        </div>
+
+
+
+
+
+                        <div class="row form-group mt-5" >
+                            <div class="col-12 col-md-10 mt-2 mb-3 d-flex justify-content-center justify-content-lg-end " >
+                                <button class="btn btn-primary btn-lg" type="submit">Registrar</button>
+
+                            </div>
+                        </div>
+        
+
+
+
+                        
+                   
+                    </form>
+                </div>
+       
+            </div>
+
+           
+        </div> <!-- simple Container -->
+
+    </div>
+   
+
+    <footer class="footer-fix ">
+        <p class="text-dark ">
+             Sede Lima: Jr. Las Calandrias N° 151 – 291 Santa Anita, Lima - Perú. Teléfono: (511) 362-0064. <br> Copyright
+                © 2018, Todos los Derechos Reservados - FIA, USMP.
+                
+        </p>
+    </footer>
+
+
+
+
+
+    <script src="../js/jquery.min.js "></script>
+    <script src="../js/popper.min.js "></script>
+    <script src="../js/bootstrap.js "></script>
+
+    <script src="../js/myscripts.js "></script>
+</body>
+
+</html>
