@@ -135,11 +135,18 @@ iframe.frame-fix{
 }
 .h2-fix-prop{
     font-size: 2em;
-   color: rgba(176,3,43,1);
+    color: rgba(176,3,43,1);
 
 }
 .p-aviso{
     font-size: 1em;
+}
+.input-text-width{
+    width:100%;
+}
+.h5-fix{
+    border-bottom:2px solid black;
+    display: inline;
 }
 /* de sm (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -163,6 +170,9 @@ iframe.frame-fix{
 @media (min-width: 992px) { 
     .p-aviso{
         font-size: 1.3em;
+    }
+    .input-text-width{
+        width:200px;
     }
  }
 

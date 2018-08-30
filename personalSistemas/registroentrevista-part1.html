@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Luis Toledo">
+    <meta name="description" content="Implementación para el Sistema de .... ">
+    <title>Sistemas de Atracción y Selección del Talento Humano</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/general.css">
+
+</head>
+
+<body class="main">
+
+    <div class="container-fluid main-content">
+
+        <div class="container ">
+
+            <header class="row header mt-3 justify-content-center justify-content-lg-start" ">
+                <figure class="col-auto " >
+                    <img src="../images/logo.png " alt="USMP - Logo ">
+                </figure>
+
+                <h1 class="col-sm-9 col-12 align-self-center text-white text-center h1-fix ">Sistema de Atracción y Selección del Talento Humano</h1>
+
+            </header>
+
+            <div class="row justify-content-center align-items-center justify-content-md-between "  >
+                <p class="col-6 text-white p-name-welcome "  >
+                    Bienvenido Personal de Sistemas  - Rectorado
+                </p>
+                <figure class="col-auto figure mb-0 " >
+                       <a href=" "> <img class="img-fix figure-img img-fluid rounded-circle " src="../images/editPic.jpg
+                " alt="Editar foto ">
+                       </a>
+                        
+                </figure>
+            </div>
+            <hr>
+           
+            <div class="row justify-content-between align-items-center" >
+                     <!-- Menu -->
+                    <div class="col-sm-10 col-9  " >
+                        <nav class="nav " id="menu "> 
+                            <ul class="nav ">
+                                <li class="nav-item ">
+                                    <a href="index.html " class="menu-link nav-link">
+                                        Requerimiento de Talento Humano
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="perfil.html " class="menu-link nav-link ">
+                                        Perfil para el Puesto
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="notificaciones.html " class="menu-link nav-link ">
+                                        Notificaciones
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a href="registroentrevista.html " class="menu-link nav-link  active ">
+                                        Registro de Entrevista
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                         </nav>
+
+                    </div>
+                 
+                    <nav class="nav col-sm-2 col-3 d-flex justify-content-end " >
+                        <p>
+                             <a href="# " class="btn btn-success btn-fix-success ">Editar Perfil</a>
+                        </p>
+                        <p class="mb-0 ">
+                            <a href="# " class="btn btn-success btn-fix-success ">Cerrar sesión</a>
+                        </p>
+                    </nav>
+                        <!-- Fin Menu -->
+
+            </div>
+
+            <!-- started row general -->
+            <div class="row" > 
+                            
+                <div class="col-12 form-fix mt-3 ">
+                        <h3 class="text-center">Guia de Entrevista</h3>
+                        <div class="w-10"></div>
+                        
+                        <div class="row justify-content-between" >
+                            <div class="col-4" >
+                                <h5 class="h5-fix">Datos Personales</h5>
+                            </div>
+
+                            <div class="col-4" style="border:1px solid red">
+                                <div class="row justify-content-between justify-content-sm-center align-items-center" >
+
+                                    <label class="col-4 col-sm-3 mb-0 pl-0" for="codigo"  > <b>Código:</b> </label>
+
+                                    <input type="text" class="col-5 col-sm-4"   placeholder="1" name="codigo" id="codigo" required>
+                                    </div>   
+
+                            </div>
+                        </div>
+
+                        <div class="w-100"></div>
+
+                        <div class="form-group row mt-4 "  style="border:1px solid black;">
+
+                            <div class="col-4 col-lg-auto">
+                                <label  class=" col-form-label" for="apellidos" style="border:1px solid red" > <b> Apellidos :</b></label>
+                            </div>    
+
+                            <div class="col-8 col-lg-auto mb-3" style="border:1px solid red">
+                                    <input type="text " class="form-control input-text-width" placeholder="Ej: Carlos Calla " name="apellidos" id="apellidos" required>
+                            </div>
+                           
+                            <div class="col-4 col-lg-auto">
+                                <label class="col-form-label"  for="nombres" style="border:1px solid red" > <b> Nombres :</b></label>
+                            </div>
+                            <div class="col-8 col-lg-auto mb-3 " style="border:1px solid red">
+                                    <input type="text " class="form-control  input-text-width " placeholder="Ej: Carlos Calla " name="nombres" id="nombres" required>               
+                            </div>
+                            
+                            <div class="col-4 col-lg-auto mb-3 " style="border:1px solid red">
+                                <button class=" btn btn-primary">Buscar</button>
+                            </div>
+
+                            <div class="col-8 col-lg-1 col-xl-auto  pl-5 pl-lg-0 ml-lg-0 ml-xl-5 mb-0 " style="border:1px solid red" >
+                                    <span> <b>Fecha Entrevista:</b> </span>
+                                    <a href="# " class="btn btn-dark text-white ">Calendario</a>
+                            </div>    
+                        </div> 
+
+                        <div class="form-group row mt-4 align-items-center align-items-lg-start"  style="border:1px solid black;">
+
+                            <div class="col-4 col-lg-auto mb-0">
+                                <label  class=" col-form-label" for="puesto" style="border:1px solid red" > <b> Puesto al que postula:</b></label>
+                            </div>
+                            <div class="col-8  mb-0" style="border:1px solid red">
+                                    <input type="text " class="form-control " placeholder="Ej: Carlos Calla " name="puesto" id="puesto" required>
+                            </div>    
+                        </div>
+                         <hr>
+                        <div class="row justify-content-between mt-4" >
+                            <div class="col-12" >
+                                <h5 class="h5-fix">Relevamiento de Entrevista  Actitudinal</h5>
+                            </div>
+                            <div class="w-100 mt-4"></div>
+                            
+
+                           
+
+
+                                <div class="col-4" style='border:1px solid red;'>
+                                    <p class="text-center">Actitud en Situación de Entrevista
+                                        <br> <span>(Solo puede marcar 3)</span>
+                                    </p>
+                                </div>
+
+                                <div class="col-4" style='border:1px solid red;'>
+                                    <div class="row ">
+                                    
+                                        <div class="col-4 ">
+                                                
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Inseguro
+                                                </label>
+
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Desconfiado 
+                                                </label>
+
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" value="">
+                                                    Tímido
+                                                </label>   
+
+                                        </div>   
+                                        
+                                        <div class="col-4">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                               Seguro
+                                            </label>
+
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                               Confiado 
+                                            </label>
+
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                Suelto
+                                            </label>   
+                                        </div>  
+                                        
+                                        <div class="col-4">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                Muy Seguro
+                                            </label>
+
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                Confiadazp
+                                            </label>
+
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                Extrovertido
+                                            </label>  
+                                        </div>      
+                                           
+                                              
+                                            
+                                    </div>            
+
+                                </div>
+
+                                <div class="col-4" style='border:1px solid red;'>
+
+                                </div>
+
+
+                            </div>
+
+                            
+                         </div>
+                        
+
+
+
+                </div> 
+       
+            </div> <!-- end row  general -->
+
+           
+        </div> <!-- simple Container -->
+
+    </div>
+   
+
+    <footer class="footer-fix ">
+        <p class="text-dark ">
+             Sede Lima: Jr. Las Calandrias N° 151 – 291 Santa Anita, Lima - Perú. Teléfono: (511) 362-0064. <br> Copyright
+                © 2018, Todos los Derechos Reservados - FIA, USMP.
+                
+        </p>
+    </footer>
+
+
+
+
+
+    <script src="../js/jquery.min.js "></script>
+    <script src="../js/popper.min.js "></script>
+    <script src="../js/bootstrap.js "></script>
+
+    <script src="../js/myscripts.js "></script>
+</body>
+
+</html>
