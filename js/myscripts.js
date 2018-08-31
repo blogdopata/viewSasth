@@ -70,4 +70,3 @@ $("#upfile1").click(function () {
 
 /*  End  upload y replace de image */
 
-$('.your-checkbox').prop('indeterminate', true)
