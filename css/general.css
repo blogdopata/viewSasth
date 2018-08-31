@@ -147,7 +147,15 @@ iframe.frame-fix{
 .h5-fix{
     border-bottom:2px solid black;
     display: inline;
+    font-weight: bold;
 }
+.hr-fix{
+    width:100%;
+}
+.input-text-fix-size{
+   width: 500px !important;
+}
+
 /* de sm (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .h1-fix{
@@ -183,6 +191,9 @@ iframe.frame-fix{
     } 
     .p-name-welcome{
         font-size: 1.5em;
+    }
+    .col-border-right{
+        border-right: 1px solid #000;
     }
 
 }

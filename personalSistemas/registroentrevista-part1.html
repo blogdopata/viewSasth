@@ -43,212 +43,420 @@
             <hr>
            
             <div class="row justify-content-between align-items-center" >
-                     <!-- Menu -->
-                    <div class="col-sm-10 col-9  " >
-                        <nav class="nav " id="menu "> 
-                            <ul class="nav ">
-                                <li class="nav-item ">
-                                    <a href="index.html " class="menu-link nav-link">
-                                        Requerimiento de Talento Humano
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="perfil.html " class="menu-link nav-link ">
-                                        Perfil para el Puesto
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="notificaciones.html " class="menu-link nav-link ">
-                                        Notificaciones
-                                    </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a href="registroentrevista.html " class="menu-link nav-link  active ">
-                                        Registro de Entrevista
-                                    </a>
-                                </li>
-                            
-                            </ul>
-                         </nav>
-
-                    </div>
-                 
-                    <nav class="nav col-sm-2 col-3 d-flex justify-content-end " >
-                        <p>
-                             <a href="# " class="btn btn-success btn-fix-success ">Editar Perfil</a>
-                        </p>
-                        <p class="mb-0 ">
-                            <a href="# " class="btn btn-success btn-fix-success ">Cerrar sesión</a>
-                        </p>
+                        <!-- Menu -->
+                <div class="col-sm-10 col-9  " >
+                    <nav class="nav " id="menu "> 
+                        <ul class="nav ">
+                            <li class="nav-item ">
+                                <a href="requerimientohumano.html" class="menu-link nav-link">
+                                    Requerimiento de Talento Humano
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="perfil.html " class="menu-link nav-link ">
+                                    Perfil para el Puesto
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="notificaciones-par1.html " class="menu-link nav-link ">
+                                    Notificaciones
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="registroentrevista.html " class="menu-link nav-link  active ">
+                                    Registro de Entrevista
+                                </a>
+                            </li>
+                        
+                        </ul>
                     </nav>
-                        <!-- Fin Menu -->
 
+                </div>
+            
+                <nav class="nav col-sm-2 col-3 d-flex justify-content-end " >
+                    <p>
+                        <a href="# " class="btn btn-success btn-fix-success ">Editar Perfil</a>
+                    </p>
+                    <p class="mb-0 ">
+                        <a href="# " class="btn btn-success btn-fix-success ">Cerrar sesión</a>
+                    </p>
+                </nav>
+                            <!-- Fin Menu -->
             </div>
 
-            <!-- started row general -->
-            <div class="row" > 
-                            
-                <div class="col-12 form-fix mt-3 ">
-                        <h3 class="text-center">Guia de Entrevista</h3>
-                        <div class="w-10"></div>
+          
+            <div class="row" >   <!-- started row general -->
                         
-                        <div class="row justify-content-between" >
-                            <div class="col-4" >
-                                <h5 class="h5-fix">Datos Personales</h5>
-                            </div>
-
-                            <div class="col-4" style="border:1px solid red">
-                                <div class="row justify-content-between justify-content-sm-center align-items-center" >
-
-                                    <label class="col-4 col-sm-3 mb-0 pl-0" for="codigo"  > <b>Código:</b> </label>
-
-                                    <input type="text" class="col-5 col-sm-4"   placeholder="1" name="codigo" id="codigo" required>
-                                    </div>   
-
-                            </div>
+                <div class="col-12 form-fix mt-3 ">
+                    <h3 class="text-center">Guia de Entrevista</h3>
+                    <div class="w-10"></div>
+                    
+                    <div class="row justify-content-between" > <!-- Row Datos -->
+                        <div class="col-4" >
+                            <h5 class="h5-fix">Datos Personales</h5>
                         </div>
 
+                        <div class="col-4">
+                            <div class="row justify-content-between justify-content-sm-center align-items-center" >
+
+                                <label class="col-4 col-sm-3 mb-0 pl-0" for="codigo"  > <b>Código:</b> </label>
+
+                                <input type="text" class="col-5 col-sm-4"   placeholder="1" name="codigo" id="codigo" required>
+                                </div>   
+
+                        </div>
+                    </div> <!-- End row datos -->
+
+                    <div class="w-100"></div>
+
+                    <div class="form-group row mt-4 "  > <!-- 1er int  row -->
+
+                        <div class="col-4 col-lg-auto">
+                            <label  class=" col-form-label" for="apellidos" > <b> Apellidos :</b></label>
+                        </div>    
+
+                        <div class="col-8 col-lg-auto mb-3">
+                                <input type="text " class="form-control input-text-width" placeholder="Ej: Carlos Calla " name="apellidos" id="apellidos" required>
+                        </div>
+                        
+                        <div class="col-4 col-lg-auto">
+                            <label class="col-form-label"  for="nombres" > <b> Nombres :</b></label>
+                        </div>
+                        <div class="col-8 col-lg-auto mb-3 ">
+                                <input type="text " class="form-control  input-text-width " placeholder="Ej: Carlos Calla " name="nombres" id="nombres" required>               
+                        </div>
+                        
+                        <div class="col-4 col-lg-auto mb-3 ">
+                            <button class=" btn btn-primary">Buscar</button>
+                        </div>
+
+                        <div class="col-8 col-lg-1 col-xl-auto  pl-5 pl-lg-0 ml-lg-0 ml-xl-5 mb-0 " >
+                                <span> <b>Fecha Entrevista:</b> </span>
+                                <a href="# " class="btn btn-dark text-white ">Calendario</a>
+                        </div>    
+                    </div>  <!-- END 1er int  row -->
+
+                    <div class="form-group row mt-4 align-items-center align-items-lg-start"  >
+
+                        <div class="col-4 col-lg-auto mb-0">
+                            <label  class=" col-form-label" for="puesto" > <b> Puesto al que postula:</b></label>
+                        </div>
+                        <div class="col-8  mb-0">
+                                <input type="text " class="form-control " placeholder="Ej: Carlos Calla " name="puesto" id="puesto" required>
+                        </div>    
+                    </div>
+
+                        <hr>
+
+                    <div class="row align-items-center" > <!-- Row  Relevamientos -->
+
+                        <div class="col-12" >
+                            <h5 class="h5-fix"> Relevamiento de Entrevista  Actitudinal</h5>
+                        </div>
+
+                        <div class="w-100 mt-4"></div>
+                        
+                        <div class="col-12 col-lg-4 align-self-lg-center" >
+                            <p class="text-center"> <b> Actitud en Situación de Entrevista</b>
+                                <br> <span>(Solo puede marcar 3)</span>
+                            </p>
+                        </div>
+
+                        <div class="col-12 col-lg-5" >
+                            <div class="row "> <!-- Row checks-->
+                                <div class="col-4 col-lg-4  ">
+                                        
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            Inseguro
+                                        </label>
+
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            Desconfiado 
+                                        </label>
+
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            Tímido
+                                        </label>   
+
+                                </div>   
+                                
+                                <div class="col-4 col-lg-3" >
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Seguro
+                                    </label>
+
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Confiado 
+                                    </label>
+
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Suelto
+                                    </label>   
+                                </div>  
+                                
+                                <div class="col-4 col-lg-5" >
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Muy Seguro
+                                    </label>
+
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Confiadazo
+                                    </label>
+
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Extrovertido
+                                    </label>  
+                                </div>      
+
+                            </div>    <!-- end row checks -->        
+
+                        </div>
+
+                        <div class="col-12 col-lg-3 form-group" >
+                                <label for="obseraciones1">Observaciones:</label>  
+                                <textarea class="form-control" id="obseraciones1" rows="2"></textarea>
+                        </div>
+                        
                         <div class="w-100"></div>
-
-                        <div class="form-group row mt-4 "  style="border:1px solid black;">
-
-                            <div class="col-4 col-lg-auto">
-                                <label  class=" col-form-label" for="apellidos" style="border:1px solid red" > <b> Apellidos :</b></label>
-                            </div>    
-
-                            <div class="col-8 col-lg-auto mb-3" style="border:1px solid red">
-                                    <input type="text " class="form-control input-text-width" placeholder="Ej: Carlos Calla " name="apellidos" id="apellidos" required>
+                        <hr class="hr-fix">
+                        
+                            <div class="col-12 col-lg-4 align-self-lg-center" >
+                                    <p class="text-center"> <b>    Presencia</b>
+                                        <br> <span>(Imagen Personal)</span>
+                                    </p>
                             </div>
-                           
-                            <div class="col-4 col-lg-auto">
-                                <label class="col-form-label"  for="nombres" style="border:1px solid red" > <b> Nombres :</b></label>
+    
+                            <div class="col-12 col-lg-5" >
+                                <div class="row "> <!-- Row checks-->
+                                    <div class="col-6 col-lg-6  ">
+                                            
+                                            <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                    <input type="radio" id="regular" name="presencia" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="regular">Regular</label>
+                                            </div> 
+                                            <div class="w-100"></div>
+                                            <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                    <input type="radio" id="bueno" name="presencia" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="bueno">Bueno</label>
+                                            </div>
+    
+                                            
+    
+                                    </div>   
+                                    
+                                    <div class="col-6 col-lg-6" >
+                                            <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                    <input type="radio" id="mbueno" name="presencia" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="mbueno">Muy bueno</label>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                    <input type="radio" id="excelente" name="presencia" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="excelente">Excelente</label>
+                                            </div>
+    
+                                        
+                                    </div>  
+                                    
+                                    
+    
+                                </div>    <!-- end row  radioButtons -->        
+    
                             </div>
-                            <div class="col-8 col-lg-auto mb-3 " style="border:1px solid red">
-                                    <input type="text " class="form-control  input-text-width " placeholder="Ej: Carlos Calla " name="nombres" id="nombres" required>               
+    
+                            <div class="col-12 col-lg-3 form-group" >
+                                    <label for="obseraciones2">Observaciones:</label>  
+                                    <textarea class="form-control" id="obseraciones2" rows="2"></textarea>
                             </div>
+                        
+                            <div class="w-100"></div>
+                            <hr class="hr-fix">
                             
-                            <div class="col-4 col-lg-auto mb-3 " style="border:1px solid red">
-                                <button class=" btn btn-primary">Buscar</button>
-                            </div>
-
-                            <div class="col-8 col-lg-1 col-xl-auto  pl-5 pl-lg-0 ml-lg-0 ml-xl-5 mb-0 " style="border:1px solid red" >
-                                    <span> <b>Fecha Entrevista:</b> </span>
-                                    <a href="# " class="btn btn-dark text-white ">Calendario</a>
-                            </div>    
-                        </div> 
-
-                        <div class="form-group row mt-4 align-items-center align-items-lg-start"  style="border:1px solid black;">
-
-                            <div class="col-4 col-lg-auto mb-0">
-                                <label  class=" col-form-label" for="puesto" style="border:1px solid red" > <b> Puesto al que postula:</b></label>
-                            </div>
-                            <div class="col-8  mb-0" style="border:1px solid red">
-                                    <input type="text " class="form-control " placeholder="Ej: Carlos Calla " name="puesto" id="puesto" required>
-                            </div>    
-                        </div>
-                         <hr>
-                        <div class="row   align-items-center" >
-                            <div class="col-12" >
-                                <h5 class="h5-fix">Relevamiento de Entrevista  Actitudinal</h5>
-                            </div>
-                            <div class="w-100 mt-4"></div>
-                            
-
-                           
-
-
-                                <div class="col-12 col-lg-4 align-self-lg-center" style='border:1px solid red;'>
-                                    <p class="text-center">Actitud en Situación de Entrevista
-                                        <br> <span>(Solo puede marcar 3)</span>
+                            <div class="col-12 col-lg-4 align-self-lg-center" >
+                                    <p class="text-center"> <b>  Comunicación</b>
+                                        <br> <span>(Habilidad para Expresarse)</span>
                                     </p>
                                 </div>
+        
+                                <div class="col-12 col-lg-5" >
+                                    <div class="row "> <!-- Row checks-->
+                                        <div class="col-12 col-lg-12  ">
+                                                <span><b> <u> Capacidad de Sintesis</u></b></span>
+                                                <div class="w-100"></div>
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="regularc" name="capacidad" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="regularc">Regular</label>
+                                                </div> 
+                                               
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="buenoc" name="capacidad" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="buenoc">Bueno</label>
+                                                </div>
 
-                                <div class="col-12 col-lg-5" style='border:1px solid red;'>
-                                    <div class="row ">
-                                    
-                                        <div class="col-4 col-lg-4  style='border:1px solid red;'">
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="mbuenoc" name="capacidad" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="mbuenoc">Muy bueno</label>
+                                                </div>
+                                               
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="excelentec" name="capacidad" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="excelentec">Excelente</label>
+                                                </div>
+        
                                                 
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    Inseguro
-                                                </label>
-
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    Desconfiado 
-                                                </label>
-
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    Tímido
-                                                </label>   
-
+        
                                         </div>   
                                         
-                                        <div class="col-4 col-lg-3" style='border:1px solid red;'>
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                               Seguro
-                                            </label>
+                                        <div class="col-12 col-lg-12" >
+                                                <span><b>  <u>Fluidez y claridad</u>      </b></span>
+                                                <div class="w-100"></div>
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="regularf" name="fluidez" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="regularf">Regular</label>
+                                                </div> 
+                                               
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="buenof" name="fluidez" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="buenof">Bueno</label>
+                                                </div>
 
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                               Confiado 
-                                            </label>
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="mbuenof" name="fluidez" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="mbuenof">Muy bueno</label>
+                                                </div>
+                                               
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="excelentef" name="fluidez" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="excelentef">Excelente</label>
+                                                </div>
+        
+        
+                                            
+                                        </div> 
+                                        
+                                        <div class="col-12 col-lg-12" >
+                                                <span><b><u>Su discurso mantiene un lineamiento</u> </b></span>
+                                                <div class="w-100"></div>
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="regulard" name="discurso" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="regulard">Regular</label>
+                                                </div> 
+                                               
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="buenod" name="discurso" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="buenod">Bueno</label>
+                                                </div>
 
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Suelto
-                                            </label>   
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="mbuenod" name="discurso" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="mbuenod">Muy bueno</label>
+                                                </div>
+                                               
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="excelenteE" name="discurso" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="excelenteE">Excelente</label>
+                                                </div>
+        
+        
+                                            
                                         </div>  
                                         
-                                        <div class="col-4 col-lg-5" style='border:1px solid red;'>
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Muy Seguro
-                                            </label>
+                                        
+        
+                                    </div>    <!-- end row  radioButtons -->        
+        
+                                </div>
+        
+                                <div class="col-12 col-lg-3 form-group" >
+                                        <label for="obseraciones3">Observaciones:</label>  
+                                        <textarea class="form-control" id="obseraciones3" rows="4"></textarea>
+                                </div>
 
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Confiadazp
-                                            </label>
+                                <div class="w-100"></div>
+                                <hr class="hr-fix">
 
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Extrovertido
-                                            </label>  
-                                        </div>      
-                                           
-                                              
+                                <div class="col-12 col-lg-4 align-self-lg-center" >
+                                        <p class="text-center"> <b>   Estabilidad Emocional</b>
+                                            <br> <span>(Autocontrol, confianza en si mismo, capacidad para dividir lo personal de lo laboral)</span>
+                                        </p>
+                                </div>
+        
+                                <div class="col-12 col-lg-5" >
+                                    <div class="row "> <!-- Row checks-->
+                                        <div class="col-6 col-lg-6  ">
+                                                
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="regulare" name="estabilidad" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="regulare">Regular</label>
+                                                </div> 
+                                                <div class="w-100"></div>
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="buenoe" name="estabilidad" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="buenoe">Bueno</label>
+                                                </div>
+        
+                                                
+        
+                                        </div>   
+                                        
+                                        <div class="col-6 col-lg-6" >
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="mbuenoe" name="estabilidad" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="mbuenoe">Muy bueno</label>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="excelentee" name="estabilidad" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="excelentee">Excelente</label>
+                                                </div>
+        
                                             
-                                    </div>            
-
+                                        </div>  
+                                        
+                                        
+        
+                                    </div>    <!-- end row  radioButtons -->        
+        
+                                </div>
+        
+                                <div class="col-12 col-lg-3 form-group" >
+                                        <label for="obseraciones4">Observaciones:</label>  
+                                        <textarea class="form-control" id="obseraciones4" rows="2"></textarea>
                                 </div>
 
-                                <div class="col-12 col-lg-3 form-group" style='border:1px solid red;'>
-                                        <label for="Obseraciones1">Observaciones:</label>
-                                  
-                                    <textarea class="form-control" id="Obseraciones1" rows="3"></textarea>
-                                </div>
+                    </div> <!-- end row Relevamientos-->
 
+                    <div class="row form-group mt-5" >
+                            <div class="col-12 col-md-12 mt-2 mb-3 d-flex justify-content-center justify-content-lg-end " >
+                                <a href="registroentrevista-part2.html#more"  class="btn btn-primary btn-lg" type="submit">Siguiente</a>
 
                             </div>
-
-                            
-                         </div>
+                    </div>    
                         
+                </div> <!-- from form-fix last-->
+                    
+                    
 
 
 
-                </div> 
-       
             </div> <!-- end row  general -->
-
+            
+        </div>  <!-- row Container -->
+    </div>     <!-- row  container -fluid -->        
            
-        </div> <!-- simple Container -->
-
-    </div>
    
+   
+
+
 
     <footer class="footer-fix ">
         <p class="text-dark ">

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Luis Toledo">
+    <meta name="description" content="Implementación para el Sistema de .... ">
+    <title>Sistemas de Atracción y Selección del Talento Humano</title>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/general.css">
+
+</head>
+
+<body class="main">
+
+    <div class="container-fluid main-content">
+
+        <div class="container ">
+
+            <header class="row header mt-3 justify-content-center justify-content-lg-start" ">
+                <figure class="col-auto " >
+                    <img src="../images/logo.png " alt="USMP - Logo ">
+                </figure>
+
+                <h1 class="col-sm-9 col-12 align-self-center text-white text-center h1-fix ">Sistema de Atracción y Selección del Talento Humano</h1>
+
+            </header>
+
+            <div class="row justify-content-center align-items-center justify-content-md-between "  >
+                <p class="col-6 text-white p-name-welcome "  >
+                    Bienvenido Personal de Sistemas  - Rectorado
+                </p>
+                <figure class="col-auto figure mb-0 " >
+                       <a href=" "> <img class="img-fix figure-img img-fluid rounded-circle " src="../images/editPic.jpg
+                " alt="Editar foto ">
+                       </a>
+                        
+                </figure>
+            </div>
+            <hr>
+           
+            <div class="row justify-content-between align-items-center" >
+                        <!-- Menu -->
+                <div class="col-sm-10 col-9  " >
+                    <nav class="nav " id="menu "> 
+                        <ul class="nav ">
+                            <li class="nav-item ">
+                                <a href="requerimientohumano.html " class="menu-link nav-link">
+                                    Requerimiento de Talento Humano
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="perfil.html " class="menu-link nav-link ">
+                                    Perfil para el Puesto
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="notificaciones.html " class="menu-link nav-link ">
+                                    Notificaciones
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="registroentrevista-part1.html " class="menu-link nav-link  active ">
+                                    Registro de Entrevista
+                                </a>
+                            </li>
+                        
+                        </ul>
+                    </nav>
+
+                </div>
+            
+                <nav class="nav col-sm-2 col-3 d-flex justify-content-end " >
+                    <p>
+                        <a href="# " class="btn btn-success btn-fix-success ">Editar Perfil</a>
+                    </p>
+                    <p class="mb-0 ">
+                        <a href="# " class="btn btn-success btn-fix-success ">Cerrar sesión</a>
+                    </p>
+                </nav>
+                            <!-- Fin Menu -->
+            </div>
+
+          
+            <div class="row" >   <!-- started row general -->
+                        
+                <div class="col-12 form-fix mt-3 ">
+                    <h3 class="text-center" id="more">Guia de Entrevista</h3>
+                    <div class="w-10"></div>
+                    
+                    <div class="row align-items-center" > <!-- Row  Relevamientos -->
+
+                        <div class="w-100"></div>
+                        <hr class="hr-fix">
+                        
+                            <div class="col-12 col-lg-4 align-self-lg-center">
+                                    <p class="text-justify"> <b>Apertura al cambio</b>
+                                        <br> <span>(Capacidad para adaptarse u advvirse a los cambios, modifica su propia conducta cuando surgen dificultades ya sea por nueva infomación o por entorno exterior</span>
+                                    </p>
+                            </div>
+    
+                            <div class="col-12 col-lg-5">
+                                <div class="row "> <!-- Row checks-->
+                                    <div class="col-6 col-lg-6 ">
+                                            
+                                            <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                    <input type="radio" id="regulara" name="apertura" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="regulara">Regular</label>
+                                            </div> 
+                                            <div class="w-100"></div>
+                                            <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                    <input type="radio" id="buenoa" name="apertura" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="buenoa">Bueno</label>
+                                            </div>
+    
+                                            
+    
+                                    </div>   
+                                    
+                                    <div class="col-6 col-lg-6">
+                                            <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                    <input type="radio" id="mbuenoa" name="apertura" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="mbuenoa">Muy bueno</label>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                    <input type="radio" id="excelentea" name="apertura" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="excelentea">Excelente</label>
+                                            </div>
+    
+                                        
+                                    </div>  
+                                    
+                                    
+    
+                                </div>    <!-- end row  radioButtons -->        
+    
+                            </div>
+    
+                            <div class="col-12 col-lg-3 form-group">
+                                    <label for="obseraciones7">Observaciones:</label>  
+                                    <textarea class="form-control" id="obseraciones5" rows="3"></textarea>
+                            </div>
+                        
+                            <div class="w-100"></div>
+                            <hr class="hr-fix">
+                            
+ 
+                                <div class="col-12 col-lg-4 align-self-lg-center">
+                                        <p class="text-justify"> <b>   Detallista ordenado y metódico</b>
+                                          
+                                        </p>
+                                </div>
+        
+                                <div class="col-12 col-lg-5">
+                                    <div class="row "> <!-- Row checks-->
+                                        <div class="col-6 col-lg-6 ">
+                                                
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="regulard" name="detallista" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="regulard">Regular</label>
+                                                </div> 
+                                                <div class="w-100"></div>
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="buenod" name="detallista" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="buenod">Bueno</label>
+                                                </div>
+        
+                                                
+        
+                                        </div>   
+                                        
+                                        <div class="col-6 col-lg-6">
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="mbuenod" name="detallista" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="mbuenod">Muy bueno</label>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="excelented" name="detallista" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="excelented">Excelente</label>
+                                                </div>
+        
+                                            
+                                        </div>  
+                                        
+                                        
+        
+                                    </div>    <!-- end row  radioButtons -->        
+        
+                                </div>
+                                
+                                <div class="col-12 col-lg-3 form-group">
+                                        <label for="obseraciones6">Observaciones:</label>  
+                                        <textarea class="form-control" id="obseraciones6" rows="3"></textarea>
+                                </div>
+
+                                <div class="w-100"></div>
+                                <hr class="hr-fix">
+
+
+                                <div class="col-12 col-lg-12">     
+                                    <h5 class="h5-fix">Conclusiones</h5>
+                                </div> 
+
+                                <div class="col-12 col-lg-12 mt-3" >  
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg-3 mb-lg-3">
+                                            <label for="observacionesG" class="" >
+                                                <b> Observaciones Generales:</b> </label>
+                                        </div>
+                                        <div class="col-12 col-lg-5 mb-lg-3">
+                                            <input type="text" class="form-control " placeholder="Ingrese observación " name="observacionesG" id="observacionesG" required>
+                                        </div>
+                                  
+
+                                        <div class="w-100"></div>
+
+                                        <div class="col-12 col-lg-3 mt-3 mt-lg-0  mb-lg-3">
+                                        
+                                            <label for="fortalezas" >
+                                                <b> Fortalezas:</b> 
+                                            </label>
+                                        </div>
+
+                                        <div class="col-12 col-lg-5 mb-lg-3">
+                                            <input type="text" class="form-control" placeholder="Ingrese Fortalezas" name="observacionesG" id="fortalezas" required>
+                                        </div>
+
+                                        <div class="w-100"></div>
+
+                                        <div class="col-12 col-lg-3 mt-3 mt-lg-0">
+                                            <label for="debilidades" "><b>
+                                                Debilidades:</b> 
+                                            </label>
+                                        </div>  
+                                        <div class="col-12 col-lg-5">
+                                            <input type="text" class="form-control" placeholder="Ingrese debilidad" name="debilidades" id="debilidades" required>
+                                        </div>  
+                                    </div>      
+                                </div> 
+
+                     </div>
+                     <div class="row form-group mt-5 justify-content-start justify-content-lg-center" >
+                            <div class="col-auto col-border-right" >
+                                <span>Supera el perfil Deseado</span>
+                                <div class="w-100"></div>
+                                    <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                            <input type="radio" id="siS" name="supera" class="custom-control-input" required>
+                                            <label class="custom-control-label" for="siS">Si</label>
+                                    </div> 
+                                    <div class="w-100"></div>
+                                    <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                            <input type="radio" id="nop" name="supera" class="custom-control-input" required>
+                                            <label class="custom-control-label" for="nop">No</label>
+                                    </div>
+
+                            </div>
+
+                            <div class="col-auto col-border-right" >
+                                    <span>Cumple el perfil Deseado</span>
+                                    <div class="w-100"></div>
+                                        <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                <input type="radio" id="cumple" name="cumple" class="custom-control-input" required>
+                                                <label class="custom-control-label" for="cumple">Si</label>
+                                        </div> 
+                                        <div class="w-100"></div>
+                                        <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                <input type="radio" id="noc" name="cumple" class="custom-control-input" required>
+                                                <label class="custom-control-label" for="noc">No</label>
+                                        </div>
+    
+                            </div>
+
+                            <div class="col-auto col-border-right" >
+                                        <span>Esta por debajo del perfil Deseado</span>
+                                        <div class="w-100"></div>
+                                            <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                    <input type="radio" id="sie" name="debajo" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="sie">Si</label>
+                                            </div> 
+                                            <div class="w-100"></div>
+                                            <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                    <input type="radio" id="nod" name="debajo" class="custom-control-input" required>
+                                                    <label class="custom-control-label" for="nod">No</label>
+                                            </div>
+        
+                            </div>
+
+                            <div class="col-auto " >
+                                            <span>Continua en proceso de selección</span>
+                                            <div class="w-100"></div>
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="sic" name="continua" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="sic">Si</label>
+                                                </div> 
+                                                <div class="w-100"></div>
+                                                <div class="custom-control mb-2 custom-radio custom-control-inline ">
+                                                        <input type="radio" id="not" name="continua" class="custom-control-input" required>
+                                                        <label class="custom-control-label" for="not">No</label>
+                                                </div>
+            
+                            </div>
+
+
+                    </div>    
+                    <div class="row form-group mt-5 justify-content-center align-items-center  " '>
+                      
+                        <div class="col-12 col-lg-auto col-sm-3 mb-0 pl-0">
+                            <label  for="entrevistado" class="mt-1" > <b>Entrevistado por :</b> </label>
+                        </div>    
+                        <div class="col-12 col-lg-6">
+                            <input type="text" class="form-control" placeholder="Ingrese nombre del entrevistador" name="entrevistado" id="entrevistado" required>
+                        </div>    
+                    </div>    
+                    
+
+                  
+
+
+                    <div class="row form-group mt-5" >
+                            <div class="col-12 col-md-12 mt-2 mb-3 d-flex justify-content-center justify-content-lg-end " >
+                                <input type="submit" href="#" class="btn btn-primary btn-lg" value="Registrar" type="submit">
+                            </div>
+                    </div>    
+                        
+                </div> <!-- from form-fix last-->
+                    
+                    
+
+
+
+            </div> <!-- end row  general -->
+            
+        </div>  <!-- row Container -->
+    </div>     <!-- row  container -fluid -->        
+           
+   
+   
+
+
+
+    <footer class="footer-fix ">
+        <p class="text-dark ">
+             Sede Lima: Jr. Las Calandrias N° 151 – 291 Santa Anita, Lima - Perú. Teléfono: (511) 362-0064. <br> Copyright
+                © 2018, Todos los Derechos Reservados - FIA, USMP.
+                
+        </p>
+    </footer>
+
+
+
+
+
+    <script src="../js/jquery.min.js "></script>
+    <script src="../js/popper.min.js "></script>
+    <script src="../js/bootstrap.js "></script>
+
+    <script src="../js/myscripts.js "></script>
+</body>
+
+</html>
