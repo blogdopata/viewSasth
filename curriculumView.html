@@ -97,7 +97,7 @@
                 <div class="col-12 col-sm-9 form-fix ">
                     <form action="/">
 
-                        <div class="row form-group mt-0 align-items-center justify-content-between">
+                        <div class="row form-group mt-0 align-items-center justify-content-center justify-content-lg-between">
                             <h3 class="col-auto">Datos Personales</h3>
                             
                             <div class="col-auto">
@@ -107,24 +107,29 @@
                         </div>
 
 
-                        <div class="row form-group"> <!--- start Row General-->
-                            
-                            <div class="col-6 mb-3 ">
+                        <div class="row form-group justify-content-center"  > <!--- start Row General-->
+
+                            <div class="col-auto col-lg-4 mb-3"  >
+
                                 <label for="nombre">Nombre(s): </label>
-                                <input type="text " class="form-control " placeholder="Ingrese nombre(s)" name="nombre " id="nombre" required>
+
+                                <input type="text " class="form-control input-fix-size input-fix-size " placeholder="Ingrese nombre(s)" name="nombre " id="nombre" required>
+
                             </div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="apellido">Apellidos:</label>
-                                <input type="text " class="form-control " placeholder="Ingrese apellidos " name="apellido " id="apellido" required>
+                                <input type="text " class="form-control input-fix-size input-fix-size " placeholder="Ingrese apellidos " name="apellido " id="apellido" required>
                             </div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="w-100"></div>
+
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <label for="fecha">Fecha de nacimiento:</label>
-                                <input type="date" class="form-control" name="fecha" id="fecha" required placeholder="dd/mm/año">
+                                <input type="date" class="form-control input-fix-size" name="fecha" id="fecha" required placeholder="dd/mm/año">
                             </div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <p>Género:</p>
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <input type="radio" id="generoM" name="genero" class="custom-control-input" required>
@@ -136,9 +141,12 @@
                                 </div>
                             </div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="w-100"></div>
+
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <label for="nacionalidad">Nacionalidad:</label>
-                                <select id="nacionalidad" class="custom-select custom-select-sm" required>
+                                <div class="w-100"></div>
+                                <select id="nacionalidad" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Perú</option>
                                     <option value="2">Brazil</option>
@@ -146,24 +154,26 @@
                                 </select>
                             </div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <label for="estado">Estado Cívil:</label>
-                                <select id="estado" class="custom-select custom-select-sm" required>
+                                <div class="w-100"></div>
+                                <select id="estado" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Soltero </option>
                                     <option value="2">Casado</option>
                                     <option value="3">Divorciado</option>
                                 </select>
                             </div>
-
-                            <div class="col-12 mb-3 ">
+                            <div class="w-100"></div>
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <label for="direccion">Dirección:</label>
-                                <input type="text " class="form-control " placeholder="Ingrese dirección" name="direccion" id="direccion" required>
+                                <input type="text " class="form-control input-fix-size " placeholder="Ingrese dirección" name="direccion" id="direccion" required>
                             </div>
 
-                            <div class="col-4 mb-3 ">
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <label for="distrito">Distrito:</label>
-                                <select id="distrito" class="custom-select custom-select-sm" required>
+                                <div class="w-100"></div>
+                                <select id="distrito" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Lince</option>
                                     <option value="2">Breña</option>
@@ -171,39 +181,58 @@
                                 </select>
                             </div>
 
-                            <div class="col-4 mb-3 ">
+                            <div class="w-100"></div>
+
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <label for="provincia">Provincia:</label>
-                                <select id="provincia" class="custom-select custom-select-sm" required>
+                                <div class="w-100"></div>
+                                <select id="provincia" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Lima </option>
                                     <option value="2">Callao</option>
                                     <option value="3">Lambayeque</option>
                                 </select>
                             </div>
-                            <div class="col-4 mb-3 ">
+
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <label for="departamento">Departamento:</label>
-                                <select id="departamento" class="custom-select custom-select-sm" required>
+                                <div class="w-100"></div>
+                                <select id="departamento" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Lima</option>
 
                                 </select>
                             </div>
-                            <div class="col-6 mb-3 ">
+                            <div class="w-100"></div>
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <label for="tel">Teléfono:</label>
-                                <input type="tel" class="form-control" name="tel" id="tel" required placeholder="Ingrese teléfono">
+                                <div class="w-100"></div>
+                                <input type="tel" class="form-control input-fix-size" name="tel" id="tel" required placeholder="Ingrese teléfono">
                             </div>
-                            <div class="col-6 mb-3 ">
+
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <label for="cel">Celular:</label>
-                                <input type="tel" class="form-control" name="cel" id="cel" required placeholder="Ingrese celular">
+                                <input type="tel" class="form-control input-fix-size" name="cel" id="cel" required placeholder="Ingrese celular">
 
 
                             </div>
+                            <div class='w-100'></div>
 
-                            <div class="col-12 mb-3 ">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control " placeholder="Ingrese su correo electrónico" name="email" id="email" required>
-                            </div>
-                            <div class="col-6 mb-3 ">
+                                <div class="col-lg-4 col-auto  mb-3  align-self-start"  >
+                                    <label for="email">Email:</label>
+                                    <div class='w-100'></div>
+                                    <input type="email" class="form-control input-fix-size " placeholder="Ingrese su correo electrónico" name="email" id="email" required>
+                                </div>
+
+                                <div class="col-lg-4 col-auto  mb-3  align-self-start" >
+                                       
+                                </div>
+
+                                
+                            
+                            <div class='w-100'></div>
+
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <label>Discapacidad: </label>
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <input type="radio" id="dsi" name="discapacidad" class="custom-control-input" required>
@@ -214,7 +243,8 @@
                                     <label class="custom-control-label" for="dno">No</label>
                                 </div>
                             </div>
-                            <div class="col-12 mb-3 ">
+
+                            <div class="col-lg-4 col-auto mb-3 ">
                                 <p>Si marco <b>Si</b>, indicar el tipo de discapacidad:</p>
                                 <select id="discaoa" class="custom-select custom-select-sm" required>
                                     <option value="" selected>Seleccione</option>

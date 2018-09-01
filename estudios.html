@@ -109,20 +109,23 @@
                             </div>
                         </div>
 
-                        <div class="row form-group">
-                            <div class="col-12 col-sm-6 mb-3 ">
+                        <div class="row form-group justify-content-center">
+
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="pais">País: </label>
-                                <select id="pais" class="custom-select custom-select-sm" required>
+                                <select id="pais" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Perú</option>
                                     <option value="2">Brazil</option>
                                     <option value="3">Rumani</option>
                                 </select>
                             </div>
+
                             <div class="w-100"></div>
-                            <div class="col-4 mb-3 ">
+
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="tipoestu">Tipo de estudio: </label>
-                                <select id="tipoestu" class="custom-select custom-select-sm" required>
+                                <select id="tipoestu" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Estudiante</option>
                                     <option value="2">Bachiller</option>
@@ -130,9 +133,9 @@
                                 </select>
                             </div>
 
-                            <div class="col-4 mb-3 ">
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="estado">Estado: </label>
-                                <select id="estado" class="custom-select custom-select-sm" required>
+                                <select id="estado" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">En Curso</option>
                                     <option value="2">Culminado</option>
@@ -140,9 +143,9 @@
                                 </select>
                             </div>
 
-                            <div class="col-4 mb-3 ">
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="ciclo">Ciclo: </label>
-                                <select id="ciclo" class="custom-select custom-select-sm" required>
+                                <select id="ciclo" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">I</option>
                                     <option value="2">II</option>
@@ -150,14 +153,14 @@
                                 </select>
                             </div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="titulo">Título de carrera:</label>
-                                <input type="text" class="form-control" name="titulo" id="titulo" required placeholder="Ingrese título">
+                                <input type="text" class="form-control input-fix-size" name="titulo" id="titulo" required placeholder="Ingrese título">
                             </div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="area">Área de estudio:</label>
-                                <select id="area" class="custom-select custom-select-sm" required>
+                                <select id="area" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Educación</option>
                                     <option value="2">T.Is</option>
@@ -165,49 +168,30 @@
                                 </select>
                             </div>
 
+                            <div class='w-100'></div>
 
-                            <div class="col-6 mb-3 ">
-                                <label>Fecha de inicio:</label> <br>
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Mes</option>
-                                    <option value="1">Enero</option>
-                                    <option value="2">Febrero</option>
-                                    <option value="3">Marzo</option>
-                                </select>
+                            <div class="col-auto col-lg-4 mb-3 ">
 
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Año</option>
-                                    <option value="1">2010</option>
-                                    <option value="2">2012</option>
-                                    <option value="3">2014</option>
-                                </select>
+                                <label for="fecha1">Fecha de inicio:</label> <br>
+                                <input type="date" class="form-control input-fix-size" name="fechaI" id="fechaI" required placeholder="dd/mm/año">
+
                             </div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label>Fecha de Fin:</label> <br>
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Mes</option>
-                                    <option value="1">Enero</option>
-                                    <option value="2">Febrero</option>
-                                    <option value="3">Marzo</option>
-                                </select>
+                                <input type="date" class="form-control input-fix-size" name="fechaF" id="fechaF" required placeholder="dd/mm/año">
 
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Año</option>
-                                    <option value="1">2010</option>
-                                    <option value="2">2012</option>
-                                    <option value="3">2014</option>
-                                </select>
+                               
                             </div>
-
-                            <div class="col-12 mb-3">
+                            <div class='w-100'></div>
+                            <div class="col-auto col-lg-4 mb-3">
                                 <label for="institución">Institución:</label>
-                                <input type="text" id="institucion" class="form-control" required>
+                                <input type="text" id="institucion" class="form-control input-fix-size" required>
                             </div>
 
-                            <div class="col-12 col-sm-2 mb-3">
+                            <div class="col-auto col-lg-4 mb-3">
                                 <label for="prom">Promedio:</label>
-                                <input type="number" id="prom" class="form-control" required>
+                                <input type="number" id="prom" class="form-control input-fix-size" required>
                             </div>
 
 

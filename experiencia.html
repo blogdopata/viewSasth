@@ -109,32 +109,32 @@
                             </div>
                         </div>
 
-                        <div class="row form-group">
+                        <div class="row form-group justify-content-center">
 
 
-                            <div class="col-6 mb-3 ">
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="nomemp">Nombre de la Empresa: </label>
-                                <input type="text" id="nomemp" class="form-control" required>
+                                <input type="text" id="nomemp" class="form-control input-fix-size" required>
                             </div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="col-auto col-lg-4  mb-3 ">
                                 <label for="actividademp">Actividad de la Empresa: </label>
-                                <select id="actividademp" class="custom-select custom-select-sm" required>
+                                <select id="actividademp" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Servicios</option>
                                     <option value="2">Productos</option>
                                     <option value="3">Freelance</option>
                                 </select>
                             </div>
-
-                            <div class="col-6 mb-3 ">
+                            <div class='w-100'></div>
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="puesto">Puesto: </label>
-                                <input type="text" id="puesto" class="form-control" required>
+                                <input type="text" id="puesto" class="form-control input-fix-size" required>
                             </div>
 
-                            <div class="col-6 mb-3 ">
-                                <label for="actividademp">Nivel de Experiencia: </label>
-                                <select id="actividademp" class="custom-select custom-select-sm" required>
+                            <div class="col-auto col-lg-4 mb-3 ">
+                                <label for="nivel">Nivel de Experiencia: </label>
+                                <select id="nivel" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Junior</option>
                                     <option value="2">middleSenior</option>
@@ -144,51 +144,34 @@
 
 
 
+                            <div class='w-100'></div>
 
-
-                            <div class="col-6 mb-3 ">
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="pais">País:</label>
-                                <select id="pais" class="custom-select custom-select-sm" required>
+                                <select id="pais" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Perú</option>
                                     <option value="2">Venezuela</option>
                                     <option value="3">Chile</option>
                                 </select>
                             </div>
-
-                            <div class="w-100"></div>
-                            <div class="col-6 mb-3 ">
-                                <label>Desde:</label> <br>
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Mes</option>
-                                    <option value="1">Enero</option>
-                                    <option value="2">Febrero</option>
-                                    <option value="3">Marzo</option>
-                                </select>
-
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Año</option>
-                                    <option value="1">2010</option>
-                                    <option value="2">2012</option>
-                                    <option value="3">2014</option>
-                                </select>
+                            <div class="col-auto col-lg-4 mb-3 ">
+                                  
                             </div>
 
-                            <div class="col-6 mb-3 ">
-                                <label>Hasta:</label> <br>
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Mes</option>
-                                    <option value="1">Enero</option>
-                                    <option value="2">Febrero</option>
-                                    <option value="3">Marzo</option>
-                                </select>
+                            <div class="w-100"></div>
+                            <div class="col-auto col-lg-4 mb-3 ">
+                                <label>Desde:</label> <br>
+                                <input type="date" class="form-control input-fix-size" name="fecha" id="fecha" required placeholder="dd/mm/año">
 
-                                <select class="fix-select-inline custom-select custom-select-sm" required>
-                                    <option value="" selected>Año</option>
-                                    <option value="1">2010</option>
-                                    <option value="2">2012</option>
-                                    <option value="3">2014</option>
-                                </select>
+                            
+                            </div>
+
+                            <div class="col-auto col-lg-4 mb-3 ">
+                                <label>Hasta:</label> <br>
+                                <input type="date" class="form-control input-fix-size" name="fecha" id="fecha" required placeholder="dd/mm/año">
+
+                               
 
                                 <div class="custom-control custom-checkbox mr-sm-2">
                                     <input type="checkbox" class="custom-control-input" id="presemte">
@@ -196,10 +179,10 @@
                                 </div>
 
                             </div>
-
-                            <div class="col-6 mb-3 ">
+                            <div class='w-100'></div>
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="areapuesto">Área del puesto: </label>
-                                <select id="areapuesto" class="custom-select custom-select-sm" required>
+                                <select id="areapuesto" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Unidad de Sistemas</option>
                                     <option value="2">Logistica</option>
@@ -207,23 +190,27 @@
                                 </select>
                             </div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="subarea">Subárea: </label>
-                                <select id="subarea" class="custom-select custom-select-sm" required>
+                                <select id="subarea" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Desarrollo software</option>
                                     <option value="2">Control de hw</option>
                                     <option value="3">Administracion de redes</option>
                                 </select>
                             </div>
-                            <div class="col-12 col-sm-12 mb-3 ">
+                            <div class='w-100'></div>
+                            <div class="col-auto col-lg-8 mb-3 ">
                                 <label for="responsabilidades">¿Descripción de responsabilidades? </label>
                                 <textarea row="10" id="responsabilidades" class="form-control textarea-fix-lg"></textarea>
                             </div>
-
+                            <div class='w-100'></div>
                             <div class="col-4 mb-3 ">
                                 <label for="personas">Personas a cargo: </label>
                                 <input type="number" id="personas" class="form-control">
+                            </div>
+                            <div class="col-4 mb-3 ">
+                                  
                             </div>
 
 

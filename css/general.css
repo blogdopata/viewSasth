@@ -159,6 +159,10 @@ iframe.frame-fix{
 .input-fix-time{
     width:80px;
 }
+
+.input-fix-size{
+    width: 220px;
+}
 /* de sm (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .h1-fix{

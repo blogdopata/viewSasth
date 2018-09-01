@@ -30,8 +30,8 @@
             </header>
             <hr>
             <section class="row mt-3">
-                <nav class="nav col-12 col-sm-3 justify-content-center justify-content-sm-start" id="menu">
-                    <ul class="nav flex-sm-column flex-row justify-content-center justify-content-sm-start pb-0 ">
+                <nav class="nav col-12 col-sm-3 justify-content-center justify-content-sm input-fix-size-start" id="menu">
+                    <ul class="nav flex-sm-column flex-row justify-content-start justify-content-sm input-fix-size-start pb-0 ">
                         <li class="nav-item ">
                             <a href="curriculumView.html" class="menu-link nav-link ">
                                 Datos Personales
@@ -108,27 +108,31 @@
                             </div>
                         </div>
 
-                        <div class="row form-group">
+                        <div class="row form-group justify-content-center">
 
 
-                            <div class="col-6 mb-3 ">
-                                <label for="nombre">Nombre: </label>
-                                <input type="text" id="nombre" class="form-control" required>
+                            <div class="col-auto col-lg-4 mb-3 " >
+                                <label for="nombre">Nombre: </label> <br>
+                                <input type="text" id="nombre" class="form-control input-fix-size" required>
+                            </div>
+
+                            <div class="col-auto col-lg-4 mb-3  d-none d-lg-block" >                                   
                             </div>
                             <div class="w-100"></div>
 
-                            <div class="col-6 mb-3 ">
+                            <div class="col-auto col-lg-4 mb-3 ">
                                 <label for="descripcion">Descripción: </label>
-                                <input type="text" id="descripcion" class="form-control" required>
+                                <input type="text" id="descripcion" class="form-control input-fix-size" required>
                             </div>
 
-                            <div class="col-6 mb-3 ">
-                                <label for="lugar">Lugar: </label>
-                                <input type="text" id="lugar" class="form-control" required>
+                            <div class="col-auto col-lg-4 mb-3 ">
+                                <label for="lugar">Lugar: </label> <br>
+                                <input type="text" id="lugar" class="form-control input-fix-size" required>
                             </div>
-                            <div class="col-3 mb-3 ">
-                                <label for="anio">Año: </label>
-                                <select id="anio" class="custom-select custom-select-sm" required>
+                            <div class='w-100'></div>
+                            <div class="col-auto col-lg-4 mb-3 ">
+                                <label for="anio">Año: </label> <br>
+                                <select id="anio" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">2016</option>
                                     <option value="2">2017</option>
@@ -136,26 +140,27 @@
                                 </select>
                             </div>
 
-                            <div class="col-3 mb-3 ">
-                                <label for="pais">País </label>
-                                <select id="pais" class="custom-select custom-select-sm" required>
+                            <div class="col-auto col-lg-4  mb-3 ">
+                                <label for="pais">País </label> <br>
+                                <select id="pais" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="">Seleccione</option>
                                     <option value="1" selected>Perú</option>
 
                                 </select>
                             </div>
-                            <div class="col-3 mb-3 ">
-                                <label for="departamento">Departamento: </label>
-                                <select id="departamento" class="custom-select custom-select-sm" required>
+                            <div class='w-100'></div>
+                            <div class="col-auto col-lg-4 mb-3 ">
+                                <label for="departamento">Departamento: </label> <br>
+                                <select id="departamento" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Lima</option>
                                     <option value="2">Ica</option>
 
                                 </select>
                             </div>
-                            <div class="col-3 mb-3 ">
-                                <label for="provincia">Provincia: </label>
-                                <select id="provincia" class="custom-select custom-select-sm" required>
+                            <div class="col-auto col-lg-4  mb-3 ">
+                                <label for="provincia">Provincia: </label> <br>
+                                <select id="provincia" class="custom-select custom-select-sm input-fix-size" required>
                                     <option value="" selected>Seleccione</option>
                                     <option value="1">Lima</option>
                                     <option value="2">Ica</option>
@@ -167,7 +172,7 @@
 
 
 
-                            <div class="col-12 mt-2 mb-3 d-flex justify-content-center justify-content-lg-end ">
+                            <div class="col-8 mt-5 mb-3 d-flex justify-content-center justify-content-lg-end ">
                                 <button class="btn btn-primary btn-lg" type="submit">Guardar</button>
 
                             </div>
