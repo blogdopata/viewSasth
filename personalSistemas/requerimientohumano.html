@@ -87,14 +87,16 @@
 
             
             <div class="row ">
-                            
-                <div class="col-10 form-fix mt-5 offset-lg-1" style='border:4px solid red;'>
+                <div class="col-12 col-lg-10 form-fix mt-5 offset-lg-1" >
                     <form action="/ ">
-                        <div class="row form-group justify-content-center" >
+                        <div class="row form-group justify-content-start justify-content-lg-center" >
 
-                            <label for="facultad " class="col-3 col-sm-3 col-form-label"><b>Facultad:</b></label>
+                            <div class="col-lg-3" >
+                                <label for="facultad" ><b>Facultad:</b>
+                                </label>
+                            </div>
 
-                            <div class="col-auto col-lg-4 mt-0 ">
+                            <div class="col-auto col-lg-3" >
                                 <select id="facultad " class="custom-select custom-select-sm input-fix-size" required>
                                     <option value=" " selected>Seleccione</option>
                                     <option value="1 ">Administración y Economía</option>
@@ -103,48 +105,60 @@
                                 </select>
                             </div>
 
-                            <div class="col-3 col-sm-2 mb-0 ml-0" >
-                            <a href="# " class="btn btn-dark text-white btn-fix ">PDF</a>
+                            <div class="col-3"  >
+                                <a href="# " class="btn btn-dark text-white btn-fix ">PDF</a>
                             </div>
 
                         </div>
 
-                        <div class="form-group row justify-content-center" >
 
-                            <label for="dependencia " class="col-3 col-form-label" > <b> Dependencia / Oficina:</b></label>
 
-                            <div class="col-5 col-sm-5 mb-3 ">
-                                <input type="text " class="form-control " placeholder="Ej: Unidad de Informática " name="dependencia" id="dependencia " required>
+
+                        <div class="form-group row justify-content-start justify-content-lg-center" >
+                            <div class="col-auto col-lg-3" >
+                                <label for="dependencia " > <b> Dependencia / Oficina:</b></label>
+                            </div>
+                            <div class="col-auto col-lg-3" >
+                                <input type="text " class="form-control input-fix-size " placeholder="Ej: Unidad de Informática " name="dependencia" id="dependencia " required>
                             </div>
 
-                            <div class="col-4 col-sm-4 mb-0 " >
+                            <div class="col-lg-3 col-auto mb-0 pl-lg-5 pl-4 mt-2 "  >
                                 <span> <b>Fecha:</b> </span>
                                 <input type="date" class="form-control "  required>
                             </div>
 
                         </div>
+<!-- fix-->
+                        <div class="form-group row mb-2 justify-content-start justify-content-lg-center" >
+                            
 
-                        <div class="form-group row mb-2 " >
+                            <label for="centro" class="col-auto col-lg-3 col-form-label "  > 
+                                <b>  Centro de costos:</b>
+                            </label>
+                          
+                            <div class="col-6 col-lg-6  mb-3 ">
+                                <input type="text " class="form-control input-fix-size " placeholder=" 7 dígitos " name="centro" id="centro" required>
+                            </div>
 
-                            <label for="centro" class="col-4  col-sm-3 col-form-label " > 
-                                <b>  Centro de costos:</b></label>
+                            <div class="w-100"></div>
+                            <label for="remuneracion" class="col-auto col-lg-3 col-form-label " > <b> Remuneración sugerida:</b></label>
 
-                            <div class="col-8 col-sm-5 mb-3 ">
-                                <input type="text " class="form-control " placeholder=" 7 dígitos " name="centro" id="centro" required>
+                            <div class="col-auto col-lg-6 mb-6 ">
+                                <input type="text " class="form-control input-fix-size " placeholder="" name="remuneracion" id="remuneracion" required>
                             </div>
                             <div class="w-100"></div>
-                            <label for="remuneracion" class="col-4 col-sm-3 col-form-label " > <b> Remuneración sugerida:</b></label>
-
-                            <div class="col-8 col-sm-5 mb-3 ">
-                                <input type="text " class="form-control " placeholder="Número decima con 2 y en soles" name="remuneracion" id="remuneracion" required>
+                            <div class="col-lg-9 col-12">
+                                <p class="mb-0 p-fix-size" > <i> *Según presupuesto de la Facultad o Dependencia y Escala Salarial </i></p>
                             </div>
-                            <p class="mb-0 p-fix-size" > <i> *Según presupuesto de la Facultad o Dependencia y Escala Salarial </i></p>
                         </div>
 
-                        <div class="row form-group mt-0">
-                                <div class="col-12 ">
+                        <div class="row form-group mt-4 justify-content-start justify-content-lg-center">
+                                <div class="col-9">
                                     <label for="requistos"><b> Requisitos Académicos:</b> </label>
+                                </div>    
                                     <div class="w-100"></div>
+
+                                <div class="col-lg-9">
                                     <div class="custom-control custom-radio custom-control-inline">
                                             <input type="radio" id="administrativo" name="requisito" class="custom-control-input" required>
                                             <label class="custom-control-label" for="administrativo">Administrativo</label>
@@ -158,10 +172,10 @@
 
                                 <div class="w-100"></div>
 
-                                <div class="col-12 mt-3 ">
+                                <div class="col-lg-9 col-12 mt-3 ">
                                         <label for="requistos"><b> Discapacidad:</b> </label>
                                         <div class="w-100"></div>
-                                        <span >Para la presente vacante ¿Admite personas con discapacidad?</span>
+                                        <span      >Para la presente vacante ¿Admite personas con discapacidad?</span>
                                         <div class="w-100"></div>
                                         <div class="custom-control custom-radio custom-control-inline mt-2">
                                                 <input type="radio" id="rsptasi" name="rspta" class="custom-control-input" required>
@@ -182,13 +196,13 @@
                                         </div>
                                         <div class="w-100"></div>
 
-                                        <div class="col-12 col-md-7 mt-3">
+                                        <div class="col-12 col-md-12 mt-3">
                                             <label for="requistos"><b> Tipo de vacante:</b> </label>
                                             <div class="w-100"></div>
                                             <div class="custom-control custom-radio custom-control-inline mt-2">
                                                     <input type="radio" id="reemplazo" name="vacante" class="custom-control-input" required>
                                                     <label class="custom-control-label" for="reemplazo">Reemplazo</label>
-                                            </div>
+                                        </div>
         
                                             <div class="custom-control custom-radio custom-control-inline">
                                                 <input type="radio" id="nueva" name="vacante" class="custom-control-input" required>
@@ -200,21 +214,27 @@
                                             
                                             <input type="text " class="form-control " placeholder="Nombre de la persona "  required>
 
-                                        </div> 
+                                         
                                 </div>
-                        </div>        
+                                </div>  
+                        </div>    
   
-                        <div class="row form-group mt-4" >
+                        <div class="row form-group mt-4 justify-content-start justify-content-lg-center"   >
 
-                            <label for="cargo" class="col-3 col-sm-1 mb-0 align-self-end pb-2"  > <b>Cargo:</b></label>
+                            <div class="col-3 col-sm-3 mb-0 align-self-end pb-2" > 
+                                <label for="cargo"> 
+                                    <b>Cargo:</b>
+                                </label>
+                            </div>
 
-                            <div class="col-8 col-md-6  text-center" >
+                            <div class="col-8 col-md-6  text-center"  >
                                 <p> <b>      ADMINISTRATIVO</b> </p>
                                 <input type="text " class="form-control mb-1" placeholder="Ingrese cargo  "  name="cargo" id="cargo" required>
                             </div>
 
                             <div class="w-100"></div>
-                            <label for="horario " class="col-3 col-sm-1 mb-0 align-self-end pb-2"   > <b>Horario:</b></label>
+
+                            <label for="horario " class="col-3 col-sm-3 mb-0 align-self-end pb-2"   > <b>Horario:</b></label>
 
                             <div class="col-8 col-md-6  text-center" >
                                
@@ -225,7 +245,7 @@
 
 
 
-                            <label for="area" class="col-3 col-sm-1 mb-0 pb-2 align-self-end" > <b>Área:</b></label>
+                            <label for="area" class="col-3 col-sm-3 mb-0 pb-2 align-self-end" > <b>Área:</b></label>
 
                             <div class="col-8 col-md-6 mt-4 text-center" >
                                 <p> <b>      PRACTICANTE</b> </p>
@@ -233,7 +253,7 @@
                             </div>
 
                             <div class="w-100"></div>
-                            <label for="horario-2" class="col-3 col-sm-1 mb-0 pb-1 align-self-end" > <b>Horario:</b></label>
+                            <label for="horario-2" class="col-3 col-sm-3 mb-0 pb-1 align-self-end" > <b>Horario:</b></label>
 
                             <div class="col-8  col-md-6 text-center" >
                                

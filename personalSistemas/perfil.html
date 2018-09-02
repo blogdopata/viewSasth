@@ -86,15 +86,15 @@
             </div>
 
             
-            <div class="row ">
+            <div class="row justify-content-center ">
                             
-                <div class="col-12 form-fix mt-3 ">
+                <div class="col-10 form-fix mt-5 ">
                     <form action="/ ">
-                        <div class="row form-group justify-content-start " >
+                        <div class="row form-group justify-content-start justify-content-center " >
 
                             <label for="facultad " class="col-3 col-form-label"><b>Facultad:</b></label>
 
-                            <div class="col-5 col-sm-5 mt-0 ">
+                            <div class="col-5 col-sm-3 mt-0 ">
                                 <select id="facultad " class="custom-select custom-select-sm " required>
                                     <option value=" " selected>Seleccione</option>
                                     <option value="1 ">Administración y Economía</option>
@@ -103,7 +103,7 @@
                                 </select>
                             </div>
 
-                            <div class="col-4 col-sm-4 mb-0 ml-0" >
+                            <div class="col-4 col-sm-3 mb-0 ml-0" >
 
                                 <div class="row justify-content-between justify-content-sm-center align-items-center" >
 
@@ -116,11 +116,11 @@
 
                         </div>
 
-                        <div class="form-group row" >
+                        <div class="form-group row justify-content-lg-center justify-content-start" >
 
                             <label for="escuela" class="col-3 col-form-label" > <b> Escuela:</b></label>
 
-                            <div class="col-5 col-sm-5 mb-3 ">
+                            <div class="col-5 col-sm-3 mb-3 ">
                                 <select id="escuela" class="custom-select custom-select-sm " required>
                                         <option value=" " selected>Seleccione</option>
                                         <option value="1 ">Administración de Empresas</option>
@@ -129,19 +129,19 @@
                                 </select>
                             </div>
 
-                            <div class="col-4 col-sm-4 mb-0 " >
+                            <div class="col-4 col-sm-3 mb-0 " >
                                
                             <a href="# " class="btn btn-dark text-white btn-fix ">PDF</a>
                             </div>
 
                         </div>
 
-                        <div class="form-group row" >
+                        <div class="form-group row justify-content-center" >
 
                                 <label for="cargo" class="col-3 col-form-label" > <b> Cargo:</b></label>
     
-                                <div class="col-5 col-sm-5 mb-3 ">
-                                    <select id="cargo" class="custom-select custom-select-sm " required>
+                                <div class="col-5 col-sm-6 mb-3 ">
+                                    <select id="cargo" class="custom-select custom-select-sm input-fix-size" required>
                                             <option value=" " selected>Seleccione</option>
                                             <option value="1 ">Programador web</option>
                                             <option value="2 ">Soporte</option>
@@ -154,9 +154,12 @@
                             </div>
 <hr>
 
-                        <div class="row form-group mt-0">
-                                <div class="col-12 " >
-                                    <label for="requistos"><b> Requisitos Académicos:</b> </label>
+                        <div class="row form-group mt-0 justify-content-start justify-content-lg-center">
+                                <div class="col-lg-9 col-12 "  >
+                                    <label for="requistos">
+                                        <b> Requisitos Académicos:</b> 
+                                    </label>
+
                                     <div class="w-100"></div>
 
                                     <div class="row form-group pl-sm-5 pl-0">
@@ -248,17 +251,23 @@
                                         </div>
 
                                     </div>
-                                </div>        
+                                </div>         <!-- col 12-->
                         </div>    
                        
- <hr>
-                        <p class="ml-0 "><b>Idiomas</b></p>
+ <hr>                   
+                       
+                           
+                       
+                        <div class="row form-group mt-0 align-items-end justify-content-center"    >
+                            <div class="col-9">
+                                <p class="ml-0 "><b>Idiomas</b></p>
+                            </div>
 
-                        <div class="row form-group mt-0 align-items-end" >
-                        
-                            <div class="col-auto col-sm-1 mb-0 pb-0" >
+                            <div class="w-100"></div>
 
-                            <label   class="col-3 col-sm-3  mb-0 pb-0 align-self-end "  > <b>Ingles: </b> </label>
+                            <div class="col-auto col-sm-3 mb-0 pb-0" >
+
+                                 <label   class="align-self-end "  > <b>Ingles: </b> </label>
                             </div>    
 
                             <div class="col-4 col-sm-3  text-center" >
@@ -282,149 +291,68 @@
                                 </select>
                             </div>
                          
-                        </div>
-<hr>
-                        <p class="ml-0"><b>Otros Conocimientos: </b>
-                            <span>
-                                    <a href="#" class="text-info">
-                                        <img src="../images/addimg.png" width="30" alt="">
-                                       
-                                    </a>
-                            </span>
-                        
-                        
-                        </p>
+                    </div>
+<hr>        
+                       
 
-                        <div class="row form-group mt-0 align-items-end" >
-                            <div class="col-12 col-sm-4" >
+                        <div class="row form-group mt-0 align-items-end justify-content-lg-center justify-content-start" >
+                            <div class="col-9" >
+                                <p class="ml-0"><b>Otros Conocimientos: </b>
+                                    <span>
+                                        <a href="#" class="text-info" data-toggle="modal" data-target="#addConocimiento">
+                                            <img src="../images/addimg.png" width="30" alt="">
+                                            
+                                        </a>
+                                    </span>
+                                </p>
+
+                            </div>
+                            <div class="w-100"></div>
+
+                            <div class="col-12 col-lg-9"  >
                               <div class="row"> <!-- initial row-->
-                                    <div class="col-6">
+
+                                    <div class="col-3">
                                         <label for="area" class="col-3 col-form-label"><b>Area:</b></label>
                                     </div>
-                                    <div class="col-6">
-                                        <select  class="custom-select custom-select-sm" id="area" required>
+
+                                    <div class="col-6 col-lg-3">
+                                        <select  class="custom-select custom-select-sm input-fix-size" id="area" required>
                                             <option value=" " selected>Seleccione</option>
                                             <option value="1 ">App. Laborales</option>
                                             <option value="2 ">Item 2</option>
                                             <option value="3 ">Item 3</option>
                                         </select>
                                     </div>
-
-                                    <div class="col-6">
+                                    <div class="w-100"></div>
+                                    <div class="col-3">
                                             <label for="conocimiento" class="col-3 col-form-label"><b>Conocimiento:</b></label>
                                     </div>
-                                    <div class="col-6">
-                                            <select  class="custom-select custom-select-sm" id="conocimiento" required>
+                                    <div class="col-6 col-lg-3">
+                                            <select  class="custom-select custom-select-sm input-fix-size" id="conocimiento" required>
                                                 <option value=" " selected>Seleccione</option>
                                                 <option value="1 ">MS.Office</option>
                                                 <option value="2 ">Item 2</option>
                                                 <option value="3 ">Item 3</option>
                                             </select>
                                     </div>
-
-                                    <div class="col-6">
+                                    <div class="w-100"></div>
+                                    <div class="col-3">
                                             <label for="nivel" class="col-3 col-form-label"><b>Nivel:</b></label>
-                                            </div>
-                                            <div class="col-6">
-                                                <select  class="custom-select custom-select-sm" id="nivel" required>
-                                                    <option value=" " selected>Seleccione</option>
-                                                    <option value="1 ">Intermedio</option>
-                                                    <option value="2 ">Item 2</option>
-                                                    <option value="3 ">Item 3</option>
-                                                </select>
-                                            </div>
+                                    </div>
+                                    <div class="col-6  col-lg-3">
+                                        <select  class="custom-select custom-select-sm input-fix-size" id="nivel" required>
+                                            <option value=" " selected>Seleccione</option>
+                                            <option value="1 ">Intermedio</option>
+                                            <option value="2 ">Item 2</option>
+                                            <option value="3 ">Item 3</option>
+                                        </select>
+                                    </div>
 
                               </div> <!-- fin su row--> 
                             </div>
 
 
-                            <div class="col-12 col-sm-4" >
-                                    <div class="row"> <!-- initial row-->
-                                        <div class="col-6">
-                                            <label for="area2" class="col-3 col-form-label"><b>Area:</b></label>
-                                        </div>
-                                        <div class="col-6">
-                                            <select  class="custom-select custom-select-sm" id="area2" required>
-                                                <option value=" " selected>Seleccione</option>
-                                                <option value="1 ">Programación</option>
-                                                <option value="2 ">Item 2</option>
-                                                <option value="3 ">Item 3</option>
-                                            </select>
-                                        </div>
-    
-                                        <div class="col-6">
-                                                <label for="conocimiento2" class="col-3 col-form-label"><b>Conocimiento:</b></label>
-                                        </div>
-                                        <div class="col-6">
-                                                <select  class="custom-select custom-select-sm" id="conocimiento2" required>
-                                                    <option value=" " selected>Seleccione</option>
-                                                    <option value="1 ">Java</option>
-                                                    <option value="2 ">Item 2</option>
-                                                    <option value="3 ">Item 3</option>
-                                                </select>
-                                        </div>
-    
-                                        <div class="col-6">
-                                                <label for="nivel2" class="col-3 col-form-label"><b>Nivel:</b></label>
-                                                </div>
-                                                <div class="col-6">
-                                                    <select  class="custom-select custom-select-sm" id="nivel2" required>
-                                                        <option value=" " selected>Seleccione</option>
-                                                        <option value="1 ">Intermedio</option>
-                                                        <option value="2 ">Item 2</option>
-                                                        <option value="3 ">Item 3</option>
-                                                    </select>
-                                                </div>
-    
-                                    </div> <!-- fin su row--> 
-
-
-
-                            </div>
-
-
-                            <div class="col-12 col-sm-4" >
-                                    <div class="row"> <!-- initial row-->
-                                        <div class="col-6">
-                                            <label for="area3" class="col-3 col-form-label"><b>Area:</b></label>
-                                        </div>
-                                        <div class="col-6">
-                                            <select  class="custom-select custom-select-sm" id="area3" required>
-                                                <option value=" " selected>Seleccione</option>
-                                                <option value="1 ">Base de Datos</option>
-                                                <option value="2 ">Item 2</option>
-                                                <option value="3 ">Item 3</option>
-                                            </select>
-                                        </div>
-    
-                                        <div class="col-6">
-                                                <label for="conocimiento3" class="col-3 col-form-label"><b>Conocimiento:</b></label>
-                                        </div>
-                                        <div class="col-6">
-                                                <select  class="custom-select custom-select-sm" id="conocimiento3" required>
-                                                    <option value=" " selected>Seleccione</option>
-                                                    <option value="1 ">SQL</option>
-                                                    <option value="2 ">Item 2</option>
-                                                    <option value="3 ">Item 3</option>
-                                                </select>
-                                        </div>
-    
-                                        <div class="col-6">
-                                                <label for="nivel3" class="col-3 col-form-label"><b>Nivel:</b></label>
-                                                </div>
-                                                <div class="col-6">
-                                                    <select  class="custom-select custom-select-sm" id="nivel3" required>
-                                                        <option value=" " selected>Seleccione</option>
-                                                        <option value="1 ">Intermedio</option>
-                                                        <option value="2 ">Item 2</option>
-                                                        <option value="3 ">Item 3</option>
-                                                    </select>
-                                                </div>
-    
-                                  </div> <!-- fin su row--> 
-
-
-                            </div>
                         
                         </div>
 
@@ -462,6 +390,66 @@
                 
         </p>
     </footer>
+
+    <!-- Modal -->
+<div class="modal fade" id="addConocimiento" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Agregar un nuevo conocimiento</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <div class="row justify-content-center"> <!-- initial row-->
+
+                        <div class="col-3">
+                            <label for="area" class="col-3 col-form-label"><b>Area:</b></label>
+                        </div>
+
+                        <div class="col-3">
+                            <select  class="custom-select custom-select-sm" id="area" required>
+                                <option value=" " selected>Seleccione</option>
+                                <option value="1 ">App. Laborales</option>
+                                <option value="2 ">Item 2</option>
+                                <option value="3 ">Item 3</option>
+                            </select>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-3">
+                                <label for="conocimiento" class="col-3 col-form-label"><b>Conocimiento:</b></label>
+                        </div>
+                        <div class="col-3">
+                                <select  class="custom-select custom-select-sm" id="conocimiento" required>
+                                    <option value=" " selected>Seleccione</option>
+                                    <option value="1 ">MS.Office</option>
+                                    <option value="2 ">Item 2</option>
+                                    <option value="3 ">Item 3</option>
+                                </select>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-3">
+                                <label for="nivel" class="col-3 col-form-label"><b>Nivel:</b></label>
+                        </div>
+                        <div class="col-3">
+                            <select  class="custom-select custom-select-sm" id="nivel" required>
+                                <option value=" " selected>Seleccione</option>
+                                <option value="1 ">Intermedio</option>
+                                <option value="2 ">Item 2</option>
+                                <option value="3 ">Item 3</option>
+                            </select>
+                        </div>
+
+                  </div> <!-- fin su row--> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Agregar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 

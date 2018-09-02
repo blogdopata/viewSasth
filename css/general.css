@@ -161,7 +161,7 @@ iframe.frame-fix{
 }
 
 .input-fix-size{
-    width: 220px;
+    width: 140px;
 }
 /* de sm (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -201,6 +201,9 @@ iframe.frame-fix{
     }
     .col-border-right{
         border-right: 1px solid #000;
+    }
+    .input-fix-size{
+        width: 198px;
     }
 
 }
