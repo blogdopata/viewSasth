@@ -84,8 +84,8 @@ body{
 }
 .btn-fix{
    
-    padding-left:40px;
-    padding-right: 40px;
+    padding-left:20px;
+    padding-right: 20px;
 }
 .img-fix{
     border: 2px solid #000;
@@ -110,6 +110,10 @@ body{
 }
 .p-fix-size{
     font-size: 0.9em;
+}
+.h-fix{
+    height: 32px;
+    display: none;
 }
 textarea.textarea-fix-lg{
     height: 8em;
@@ -169,7 +173,15 @@ iframe.frame-fix{
         font-size: 2em;
         margin: 0;
     }
+    .h-fix{
+        height: 32px;
+        display: block;
+    }
+    .btn-fix{
    
+        padding-left:40px;
+        padding-right: 40px;
+    }
 
  }
 
